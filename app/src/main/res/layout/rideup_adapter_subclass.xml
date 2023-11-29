@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_toyoto_glanza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOYOTO GLANZA"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/success"
+    android:layout_toRightOf="@id/tv_toyoto_glanza"/>
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/car"
+    android:layout_alignParentEnd="true"
+    />
+            <TextView
+                android:id="@+id/tv_5_star"
+                android:layout_below="@id/tv_toyoto_glanza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 Seater | Black"
+                />
+            <ImageView
+                android:id="@+id/iv_stars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ratingbar"
+                android:layout_toRightOf="@id/tv_5_star"
+                android:layout_below="@id/tv_toyoto_glanza"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="258 Ratings"
+                android:layout_below="@id/tv_toyoto_glanza"
+                android:layout_toRightOf="@id/iv_stars"/>
+<ImageView
+    android:id="@+id/ivlocation"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/location"
+    android:layout_below="@id/iv_stars"
+    />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vijay Nagar, Indore,Madhya Pradesh 452011"
+                android:textStyle="bold"
+                android:layout_below="@id/tv_5_star"
+                android:layout_toRightOf="@id/ivlocation"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnBoarding1">
+    <include layout="@layout/ride_up_circle_logo"
+        android:id="@+id/ilogo"/>
+
+    <ImageView
+        android:id="@+id/iv_rideup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rideup1"
+        android:layout_below="@id/ilogo"
+        android:layout_centerHorizontal="true"
+       />
+    <TextView
+        android:id="@+id/tv_welcome_trident"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Welcome to trident"
+        android:textSize="25sp"
+        android:layout_marginLeft="10sp"
+        android:layout_below="@id/iv_rideup1"
+        android:layout_marginTop="30sp"/>
+    <TextView
+        android:id="@+id/tv_taxi_ride"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="taxi ride share service"
+        android:textSize="25sp"
+        android:layout_marginLeft="10sp"
+        android:layout_below="@id/tv_welcome_trident"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_by_comparing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By comparing all the major ride  options in"
+        android:textSize="15sp"
+        android:layout_marginLeft="10sp"
+        android:layout_below="@id/tv_taxi_ride"
+        />
+
+    <TextView
+        android:id="@+id/tv_one_free_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="one free app"
+        android:layout_marginLeft="10sp"
+        android:textSize="15sp"
+        android:layout_below="@id/tv_by_comparing"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background_transparent_border"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background_transparent_border"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+
+        />
+
+
+
+</RelativeLayout>

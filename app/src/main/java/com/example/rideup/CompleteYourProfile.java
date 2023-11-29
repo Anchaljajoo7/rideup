@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -35,6 +37,11 @@ Button button;
             @Override
             public void onClick(View v) {
                 Dialog dialog=new Dialog(CompleteYourProfile.this);
+                dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                dialog.setCancelable(false);
+                dialog.setContentView(R.layout.popup_window);
+                dialog.show();
+
             }
         });
     }
