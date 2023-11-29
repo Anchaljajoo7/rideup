@@ -21,6 +21,17 @@
         android:layout_marginLeft="10dp"/>
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:textColor="@color/mor"
+        android:layout_marginRight="10dp"
+        android:id="@+id/tvedit"
+        android:layout_below="@id/tv_we_just_sent_an_sms"
+        android:layout_alignParentEnd="true"
+        />
+
+    <TextView
         android:id="@+id/tv_enter_the_security_code"
         android:layout_below="@id/tv_we_just_sent_an_sms"
         android:layout_width="wrap_content"
@@ -83,13 +94,13 @@
         android:layout_height="wrap_content"/>
 
     <TextView
+        android:layout_marginTop="10dp"
         android:id="@+id/tv45s"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="45s"
         android:layout_below="@id/potp"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
         android:textStyle="bold"
         />
@@ -104,8 +115,4 @@
         android:layout_margin="10dp"
         android:backgroundTint="@color/mor"
         />
-
-
-
-
 </RelativeLayout>

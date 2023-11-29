@@ -68,7 +68,7 @@
         android:layout_height="wrap_content"
         android:hint="Enter Full name"
         android:layout_marginHorizontal="10dp"
-        android:textAlignment="center"
+
         android:padding="10dp"
         android:inputType="text"
         android:background="@drawable/background_transparent_border"/>
@@ -90,7 +90,7 @@
         android:layout_height="wrap_content"
         android:hint="Enter Your Email"
         android:layout_marginHorizontal="10dp"
-        android:textAlignment="center"
+
         android:padding="10dp"
         android:inputType="text"
         android:background="@drawable/background_transparent_border"/>
@@ -115,7 +115,8 @@
         android:layout_below="@id/et_enter_email"
         android:layout_alignParentRight="true"
         android:layout_marginTop="10dp"
-        android:layout_marginHorizontal="20dp"
+        android:layout_marginRight="30dp"
+
         />
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
@@ -131,7 +132,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/tv_male"
         android:text="Male"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:background="@color/mor"/>
             <TextView
                 android:layout_toRightOf="@id/tv_male"
                 android:layout_width="wrap_content"
@@ -149,13 +151,15 @@
         android:layout_height="wrap_content">
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp">
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="12/6/96"
-            android:id="@+id/et_calendar"/>
+            android:id="@+id/et_calendar"
+            />
         <ImageView
             android:layout_toRightOf="@id/et_calendar"
             android:layout_width="wrap_content"
@@ -176,5 +180,6 @@
         android:layout_margin="10dp"
         android:backgroundTint="@color/mor"
         />
+
 
 </RelativeLayout>

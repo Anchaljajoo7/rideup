@@ -3,6 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,7 +38,25 @@ android:id="@+id/ivsuccessfulimage"
         android:layout_marginTop="20dp"/>
 
 
+    <TextView
+        android:id="@+id/tv_direct_to_the_homepage"
+        android:layout_below="@id/tv_please_wait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You will be directed to the homepage"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/processing"
+        android:layout_below="@id/tv_direct_to_the_homepage"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"/>
 
 
+        </RelativeLayout>
 
+    </androidx.cardview.widget.CardView>
 </RelativeLayout>

@@ -113,6 +113,7 @@
         android:text="Verify OTP"
         android:layout_margin="10dp"
         android:backgroundTint="@color/mor"
+
         />
 
 
