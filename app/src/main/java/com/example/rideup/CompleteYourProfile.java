@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 public class CompleteYourProfile extends AppCompatActivity {
-ImageView imageView;
+ImageView imageView,imageView1;
 
 Button button;
     @Override
@@ -42,7 +42,14 @@ Button button;
                 dialog.setContentView(R.layout.popup_window);
                 dialog.show();
 
+
             }
+
         });
+
+
     }
+
+
+
 }

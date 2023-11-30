@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Search"
+        android:id="@+id/tv_vehiclesearch"
+        android:textStyle="bold"
+        android:layout_margin="10dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cut"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/mor"
+        android:layout_height="wrap_content"
+        android:text="Modify Search"
+        android:textColor="@color/white"
+        android:id="@+id/b_modify_search"
+        android:layout_below="@id/tv_vehiclesearch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="10dp"/>
+
+</RelativeLayout>

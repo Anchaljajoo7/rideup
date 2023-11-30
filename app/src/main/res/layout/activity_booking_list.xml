@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/mor"
-        app:cardCornerRadius="15dp"
+        app:cardCornerRadius="4dp"
         >
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -51,6 +51,7 @@
                 android:layout_marginLeft="32dp" />
 
             <ImageView
+                android:id="@+id/iv_edit1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/edit1"
@@ -111,7 +112,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_below="@id/tv_single_seat"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:id="@+id/rvrecyclerview"/>
 
 
