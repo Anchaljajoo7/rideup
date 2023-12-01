@@ -49,6 +49,7 @@
 
             <RatingBar
                 android:id="@+id/iv_stars"
+                style="?android:attr/ratingBarStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_toyoto_glanza"
@@ -56,8 +57,11 @@
                 android:layout_centerVertical="true"
                 android:layout_marginTop="3dp"
                 android:layout_toRightOf="@id/tv_5_star"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:stepSize="0.1"
 
-               />
+                />
 
             <TextView
                 android:id="@+id/tv_ratings"

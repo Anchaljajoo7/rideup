@@ -14,6 +14,7 @@ public class BookingListItem {
 
     String price;
 
+
     public BookingListItem(String carname, String carseater, String carrating, String caraddress, String drivername, String gender, String driver, String age, String seatsavilable, String price) {
         this.carname = carname;
         this.carseater = carseater;

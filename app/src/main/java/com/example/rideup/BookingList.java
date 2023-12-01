@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -15,7 +16,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import java.util.ArrayList;
 
-public class BookingList extends AppCompatActivity {
+public class BookingList extends AppCompatActivity implements RideupRecyclerAdapter.selectVechile {
     ImageView imageView;
     TextView textView;
     LinearLayout linearLayout;
@@ -44,8 +45,18 @@ RecyclerView recyclerView;
         listItems.add(item4);
 
 
-        RideupRecyclerAdapter rideupRecyclerAdapter = new RideupRecyclerAdapter(listItems, BookingList.this);
+        RideupRecyclerAdapter rideupRecyclerAdapter = new RideupRecyclerAdapter(listItems, BookingList.this,this);
         recyclerView.setAdapter(rideupRecyclerAdapter);
+        textView=recyclerView.findViewById(R.id.tv_book);
+
+//        textView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent=new Intent(BookingList.this, Detail.class);
+//                startActivity(intent);
+//                finish();
+//            }
+//        });
     }
 
     private void initial() {
@@ -64,15 +75,7 @@ linearLayout.setOnClickListener(new View.OnClickListener() {
     }
 });
 
-//textView=findViewById(R.id.tv_book);
-//textView.setOnClickListener(new View.OnClickListener() {
-//    @Override
-//    public void onClick(View v) {
-//        Intent intent=new Intent(BookingList.this, Detail.class);
-//        startActivity(intent);
-//        finish();
-//    }
-//});
+
     }
 
     private void showbottomsheetforfilters() {
@@ -86,6 +89,15 @@ linearLayout.setOnClickListener(new View.OnClickListener() {
         BottomSheetDialog bottomSheetDialog=new BottomSheetDialog(this);
         bottomSheetDialog.setContentView(R.layout.bottomsheet_vehiclesearch_rideup);
         bottomSheetDialog.show();
+
+    }
+
+    @Override
+    public void recyclertoactivity(int position) {
+        Log.d("success", "recyclertoactivity: "+position);
+        Intent intent=new Intent(BookingList.this,Detail.class);
+        startActivity(intent);
+        finish();
 
     }
 }

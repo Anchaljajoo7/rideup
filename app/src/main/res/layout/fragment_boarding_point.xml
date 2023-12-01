@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BoardingPointTabLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+        <ImageView
+            android:id="@+id/iv_pickuplocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pickuplocation" />
+
+        <TextView
+            android:id="@+id/tv_pickuppoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6sp"
+            android:layout_toRightOf="@id/iv_pickuplocation"
+            android:text="Pickup Point"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_pickuppoint"
+            android:layout_marginLeft="6sp"
+            android:text="."
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_pickuppoint"
+            android:layout_marginLeft="6sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/tv_dot"
+            android:text="Vijay Nagar, Indore, Madhya Pradesh 452011"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_dot1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_location"
+            android:layout_marginLeft="6sp"
+            android:text="."
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_location1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_location"
+            android:layout_marginLeft="6sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/tv_dot1"
+            android:text="syaji Petrol Pump Indore, Madhya Pradesh 452011"
+            android:textSize="13sp" />
+
+
+
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tv_location1"
+            android:id="@+id/iv_droplocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pickuplocation" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_droppoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6sp"
+            android:layout_toRightOf="@id/iv_droplocation"
+            android:text="Dropping Point"
+            android:textStyle="bold"
+            android:layout_below="@id/tv_location1"/>
+
+        <TextView
+            android:id="@+id/tv_dot3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_droppoint"
+            android:layout_marginLeft="6sp"
+            android:text="."
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_location2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_droppoint"
+            android:layout_marginLeft="6sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/tv_dot3"
+            android:text="DB mall, Bhopal, Madhya Pradesh 452011"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_dot4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_location2"
+            android:layout_marginLeft="6sp"
+            android:text="."
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_location4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_location2"
+            android:layout_marginLeft="6sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/tv_dot4"
+            android:text="Railway station, Bhopal, Madhya Pradesh 452011"
+            android:textSize="13sp" />
+
+
+
+
+    </RelativeLayout>
+</FrameLayout>

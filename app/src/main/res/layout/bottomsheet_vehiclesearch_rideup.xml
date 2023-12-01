@@ -2,30 +2,102 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <TextView
+        android:id="@+id/tv_vehiclesearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:text="Vehicle Search"
-        android:id="@+id/tv_vehiclesearch"
-        android:textStyle="bold"
-        android:layout_margin="10dp"/>
+        android:textStyle="bold" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/cut"
         android:layout_alignParentRight="true"
         android:layout_margin="10dp"
-        />
-    <Button
+        android:src="@drawable/cut" />
+
+    <RelativeLayout
+        android:id="@+id/rl_from_to"
         android:layout_width="match_parent"
-        android:backgroundTint="@color/mor"
         android:layout_height="wrap_content"
-        android:text="Modify Search"
-        android:textColor="@color/white"
-        android:id="@+id/b_modify_search"
         android:layout_below="@id/tv_vehiclesearch"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/background_transparent_border">
+
+        <ImageView
+            android:id="@+id/iv_fromlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/from"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_from_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/iv_fromlocation"
+            android:text="Indore"
+            android:layout_marginLeft="10dp"/>
+       <View
+           android:layout_width="1dp"
+           android:layout_height="52dp"
+           android:background="@color/black"
+           android:layout_below="@id/iv_fromlocation"
+           android:layout_marginLeft="15dp"
+           />
+        <View
+            android:layout_width="352dp"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_below="@id/iv_fromlocation"
+            android:layout_marginLeft="25dp"
+            android:layout_toLeftOf="@id/iv_from_to"
+            android:layout_marginTop="23dp"
+
+            />
+        <ImageView
+            android:id="@+id/iv_from_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fromto"
+            android:layout_below="@id/tv_from_location"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_tolocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_from_to"
+android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/to" />
+
+        <TextView
+            android:id="@+id/tv_to_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_from_to"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/iv_tolocation"
+            android:text="Bhopal" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/b_modify_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_from_to"
         android:layout_centerHorizontal="true"
-        android:layout_marginHorizontal="10dp"/>
+        android:layout_marginHorizontal="10dp"
+        android:backgroundTint="@color/mor"
+        android:text="Modify Search"
+        android:textColor="@color/white" />
 
 </RelativeLayout>

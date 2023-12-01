@@ -1,10 +1,210 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Detail">
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/iv_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/carbigimage" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/reversearrow" />
+
+
+    <TextView
+        android:id="@+id/ll_Toyota_Glanza_From"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_car"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Toyota Glanza: From Indore -"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_car"
+        android:layout_marginTop="12dp"
+        android:layout_toLeftOf="@id/tv_verified"
+        android:src="@drawable/success" />
+
+
+    <TextView
+        android:id="@+id/tv_verified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_car"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20sp"
+        android:text="Verified" />
+
+    <TextView
+        android:id="@+id/tv_bhopal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_Toyota_Glanza_From"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Bhopal"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:isIndicator="false"
+        android:id="@+id/rb_rating"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_bhopal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tv_258ratings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_bhopal"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/rb_rating"
+        android:text="258 Ratings |" />
+
+    <ImageView
+        android:id="@+id/iv_carmini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_bhopal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/tv_258ratings"
+        android:src="@drawable/carmini" />
+
+    <LinearLayout
+        android:id="@+id/ll_410_ridesshared"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_bhopal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/iv_carmini"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="410"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rides Shared"
+            android:textSize="10sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_bhopal"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_toRightOf="@id/ll_410_ridesshared"
+        android:text="|" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rb_rating"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10sp"
+        android:text="05:00 PM - 06:00 AM"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv5_Seater_Black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_time"
+        android:layout_marginLeft="20sp"
+        android:text="5 Seater | Black" />
+
+    <LinearLayout
+        android:id="@+id/ll_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv5_Seater_Black"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:orientation="horizontal"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_below="@id/ll_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tblayout"
+        android:layout_marginHorizontal="20dp"/>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tblayout"
+        android:id="@+id/vpviewpager"
+        android:layout_above="@id/ll_rupess"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"/>
+
+
+
+    <Button
+        android:id="@+id/b_booknow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:text="Book now"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_rupess"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_marginLeft="20sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹ 900"
+            android:textStyle="bold"
+            android:layout_marginRight="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Par passengers "
+            android:textStyle="bold"
+            android:layout_marginRight="20sp"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

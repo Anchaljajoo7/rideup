@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RatingTabLayout">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!-- TODO: Update blank fragment layout -->
+   <ImageView
+       android:id="@+id/iv_personimage"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/personimage"/>
+    <TextView
+        android:layout_marginLeft="10sp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/tv_personname"
+        android:layout_toRightOf="@id/iv_personimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rocks Velkeinjen"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 Feb"
+        android:layout_alignParentRight="true"
+
+/>
+    <RatingBar
+        android:layout_marginTop="10dp"
+        android:id="@+id/rb_ratingbar"
+        android:layout_marginLeft="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:isIndicator="false"
+        android:layout_below="@id/tv_personname"
+        android:layout_toRightOf="@id/iv_personimage"
+/>
+    
+    <TextView
+        android:layout_marginTop="10sp"
+        android:layout_toRightOf="@id/iv_personimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Cinemas is the ultimate experience to see new movies in Gold Class or Vmax. Find a cinema near you."
+        android:layout_below="@id/rb_ratingbar"
+
+        />
+</RelativeLayout>
+
+</FrameLayout>
