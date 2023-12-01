@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Rideup"
         tools:targetApi="31">
         <activity
-            android:name=".CarBookingSeater"
+            android:name=".BookingList"
             android:exported="false" />
         <activity
             android:name=".Detail"
@@ -34,7 +34,7 @@
             android:name=".NumberVerification"
             android:exported="false" />
         <activity
-            android:name=".BookingList"
+            android:name=".CarBookingSeater"
             android:exported="true"
             android:theme="@style/Base.Theme.Rideup">
             <intent-filter>
