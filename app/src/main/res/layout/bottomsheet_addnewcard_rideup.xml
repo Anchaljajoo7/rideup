@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="20dp">
+
+    <TextView
+        android:id="@+id/tv_addnewcard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Add New Card"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/cut" />
+
+    <TextView
+        android:id="@+id/tv_cardnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Card Number"
+        android:textStyle="bold"
+        android:layout_below="@id/tv_addnewcard"
+        android:layout_marginTop="20sp"/>
+
+    <EditText
+        android:background="@drawable/background_transparent_border"
+        android:id="@+id/et_cardnumber"
+        android:layout_marginTop="10sp"
+        android:layout_below="@id/tv_cardnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter 12 digit card number"/>
+    <LinearLayout
+        android:layout_below="@id/et_cardnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/tv_validthru"
+        android:textStyle="bold"
+        android:layout_marginTop="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valid Thru"
+        />
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_marginTop="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CVV"
+        android:textStyle="bold"/>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
