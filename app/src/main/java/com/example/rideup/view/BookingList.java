@@ -1,4 +1,4 @@
-package com.example.rideup;
+package com.example.rideup.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -12,6 +12,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.rideup.BookingListItem;
+import com.example.rideup.R;
+import com.example.rideup.RideupRecyclerAdapter;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import java.util.ArrayList;

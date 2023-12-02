@@ -1,4 +1,4 @@
-package com.example.rideup;
+package com.example.rideup.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.example.rideup.R;
+import com.example.rideup.TabRideUpAdapter;
 import com.google.android.material.tabs.TabLayout;
 
 public class Detail extends AppCompatActivity {

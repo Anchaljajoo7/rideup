@@ -1,10 +1,12 @@
-package com.example.rideup;
+package com.example.rideup.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 
+import com.example.rideup.R;
+import com.example.rideup.TabRideupAdapter1;
 import com.google.android.material.tabs.TabLayout;
 
 public class CarBookingSeater extends AppCompatActivity {
@@ -46,5 +48,6 @@ public class CarBookingSeater extends AppCompatActivity {
             }
 
         });
+
     }}
 

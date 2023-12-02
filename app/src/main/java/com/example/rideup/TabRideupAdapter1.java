@@ -5,8 +5,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
+import com.example.rideup.view.CarBookingSeater;
+
 public class TabRideupAdapter1 extends FragmentPagerAdapter {
-    public TabRideupAdapter1( CarBookingSeater carBookingSeater,@NonNull FragmentManager fm) {
+    public TabRideupAdapter1(CarBookingSeater carBookingSeater, @NonNull FragmentManager fm) {
         super(fm);
     }
 

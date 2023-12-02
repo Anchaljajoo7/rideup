@@ -59,7 +59,7 @@ View view;
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-         inflater.inflate(R.layout.fragment_pickup_points_tab_layout, container, false);
+        view= inflater.inflate(R.layout.fragment_pickup_points_tab_layout, container, false);
         return view;
     }
 }

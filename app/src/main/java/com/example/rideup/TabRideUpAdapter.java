@@ -1,12 +1,16 @@
 package com.example.rideup;
 
+import android.view.View;
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
+import com.example.rideup.view.Detail;
+
 public class TabRideUpAdapter extends FragmentPagerAdapter {
-    public TabRideUpAdapter(Detail detail,@NonNull FragmentManager fm) {
+    public TabRideUpAdapter(Detail detail, @NonNull FragmentManager fm) {
         super(fm);
     }
 

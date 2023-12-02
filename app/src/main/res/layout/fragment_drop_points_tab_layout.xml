@@ -6,9 +6,103 @@
     tools:context=".DropPointsTabLayout">
 
     <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        >
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pickuplocation"
+        android:id="@+id/iv_pickup"/>
     <TextView
+        android:layout_marginLeft="10sp"
+        android:layout_toRightOf="@id/iv_pickup"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Pickup Point(2) "
+        android:textStyle="bold"/>
+
+    <RadioButton
+        android:id="@+id/rb1"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_pickup"/>
+    <TextView
+        android:layout_toRightOf="@id/rb1"
+        android:id="@+id/tv_pickuplocation"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vijay Nagar, Indore, Madhya Pradesh 452011"
+        android:layout_below="@id/iv_pickup"
+        />
+    <RadioButton
+        android:id="@+id/rb2"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_pickuplocation"/>
+    <TextView
+        android:layout_toRightOf="@id/rb2"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="syaji Petrol Pump Indore, Madhya Pradesh 452011"
+        android:layout_below="@id/tv_pickuplocation"/>
+    </RelativeLayout>
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
+        <View
+            android:layout_above="@id/ll_rupess"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/black"/>
+        <LinearLayout
+            android:id="@+id/ll_rupess"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seat 2 L"
+                android:textStyle="bold"
+                android:layout_marginRight="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 900.60 "
+                android:textStyle="bold"
+                android:layout_marginRight="20sp"
+                android:textColor="@color/mor"
+                />
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/b_Next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:text="Next"
+            android:layout_marginBottom="20dp"/>
+    </RelativeLayout>
+
 
 </FrameLayout>

@@ -1,4 +1,4 @@
-package com.example.rideup;
+package com.example.rideup.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import com.example.rideup.R;
 
 public class CompleteYourProfile extends AppCompatActivity {
 ImageView imageView,imageView1;

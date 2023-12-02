@@ -13,28 +13,34 @@
         android:theme="@style/Theme.Rideup"
         tools:targetApi="31">
         <activity
-            android:name=".BookingList"
+            android:name=".view.PaymentOptions"
             android:exported="false" />
         <activity
-            android:name=".Detail"
+            android:name=".view.CarBookingSeater"
+            android:exported="false" />
+        <activity
+            android:name=".view.LaunchScreen"
+            android:exported="false" />
+        <activity
+            android:name=".view.Detail"
             android:exported="false" />
         <activity
             android:name=".OnBoarding1"
             android:exported="false" />
         <activity
-            android:name=".LaunchScreen"
+            android:name=".view.AddPassangers"
             android:exported="false" />
         <activity
-            android:name=".CompleteYourProfile"
+            android:name=".view.CompleteYourProfile"
             android:exported="false" />
         <activity
-            android:name=".OTPCode"
+            android:name=".view.OTPCode"
             android:exported="false" />
         <activity
-            android:name=".NumberVerification"
+            android:name=".view.NumberVerification"
             android:exported="false" />
         <activity
-            android:name=".CarBookingSeater"
+            android:name=".view.BookingList"
             android:exported="true"
             android:theme="@style/Base.Theme.Rideup">
             <intent-filter>
