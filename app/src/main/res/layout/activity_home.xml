@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.Home"
+   >
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="20dp">
+    <ImageView
+        android:id="@+id/iv_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/navigation"
+        android:layout_marginTop="20dp"/>
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/iv_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/notification"
+        android:layout_alignParentRight="true"/>
+    <RelativeLayout
+android:id="@+id/rl_becomedriver"
+        android:layout_marginRight="10dp"
+        android:padding="5dp"
+        android:background="@drawable/background_solidcolor_bordr"
+        android:backgroundTint="@color/mor"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@id/iv_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_driverpic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/driverpic"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_marginLeft="5sp"
+            android:layout_toRightOf="@id/iv_driverpic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Become \n a driver"/>
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_from_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_becomedriver"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_solidcolor_bordr">
+
+        <ImageView
+            android:id="@+id/iv_fromlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/from"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/et_from_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/iv_fromlocation"
+          android:hint="Pickup Location"
+            android:background="@color/transparent"
+            android:layout_marginLeft="10dp"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="52dp"
+            android:background="@color/black"
+            android:layout_below="@id/iv_fromlocation"
+            android:layout_marginLeft="15dp"
+            />
+        <View
+            android:layout_width="352dp"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_below="@id/iv_fromlocation"
+            android:layout_marginLeft="25dp"
+            android:layout_toLeftOf="@id/iv_from_to"
+            android:layout_marginTop="23dp"
+
+            />
+        <ImageView
+            android:id="@+id/iv_from_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fromto"
+            android:layout_below="@id/et_from_location"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_tolocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_from_to"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/to" />
+
+        <EditText
+            android:background="@color/transparent"
+            android:id="@+id/et_to_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_from_to"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/iv_tolocation"
+           android:hint="Drop Location"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_above="@id/b_search"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/currentlocation"/>
+    <Button
+        android:id="@+id/b_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:layout_alignParentBottom="true"
+        android:text="Search"
+        android:layout_marginBottom="20dp"
+/>
+
+</RelativeLayout>
+</RelativeLayout>

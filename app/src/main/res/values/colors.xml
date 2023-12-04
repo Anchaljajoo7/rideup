@@ -5,4 +5,5 @@
     <color name="mor">#3C8F7C</color>
     <color name="gray">#99A3A2</color>
     <color name="gray1">#D4D4D4</color>
+    <color name="transparent"> #ffffff</color>
 </resources>

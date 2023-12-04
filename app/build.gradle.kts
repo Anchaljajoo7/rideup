@@ -37,5 +37,12 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation ("io.github.chaosleung:pinview:1.4.4")
+//    implementation ("com.google.android.gms:play-services:11.6.0")
+//    implementation ("com.google.android.gms:play-services-maps:15.0.1")
+    implementation ("com.google.maps.android:android-maps-utils:3.8.0")
+//    implementation ("com.google.android.gms:play-services:12.0.1")
+    implementation ("com.android.support:multidex:1.0.3")
+    implementation ("com.google.android.gms:play-services:8.4.0")
+    implementation ("com.google.android.gms:play-services-measurement:17.6.0")
 
 }
