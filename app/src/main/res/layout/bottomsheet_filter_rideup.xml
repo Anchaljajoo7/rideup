@@ -1,248 +1,268 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginHorizontal="15dp">
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="@dimen/_20sdp">
 
     <TextView
+        android:id="@+id/tv_filter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:fontFamily="@font/sansmedium"
         android:text="Filter"
-        android:id="@+id/tv_filter"
-        android:textStyle="bold"
-        android:layout_margin="10dp"
-        android:textSize="20sp"/>
+        android:textSize="@dimen/_17ssp"
+        android:textStyle="bold" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/cut"
         android:layout_alignParentRight="true"
-        android:layout_margin="10dp"
-        />
+        android:layout_marginVertical="10dp"
+        android:src="@drawable/cut" />
+
     <TextView
-        android:layout_below="@id/tv_filter"
+        android:id="@+id/tv_vehicle_type"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/tv_filter"
+        android:layout_marginTop="10sp"
+        android:fontFamily="@font/sansregular"
         android:text="Vehicle Type"
-        android:id="@+id/tv_vehicle_type"
-        android:textStyle="bold"
-        android:layout_marginTop="10sp"/>
+        android:textStyle="bold" />
+
     <LinearLayout
-        android:layout_marginTop="10dp"
-        android:weightSum="4"
         android:id="@+id/ll_full"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/tv_vehicle_type"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="@dimen/_20sdp"
         android:orientation="horizontal"
-        android:layout_below="@id/tv_vehicle_type">
-    <LinearLayout
-android:layout_weight="1"
-        android:id="@+id/ll_carlogo"
-        android:background="@drawable/background_transparent_border"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="5dp"
-        >
-    <ImageView
-        android:layout_gravity="center"
-        android:layout_width="40dp"
-        android:layout_height="30dp"
-        android:src="@drawable/carlogo"
-        />
-        <TextView
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Car"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_weight="1"
-        android:layout_marginLeft="20dp"
-        android:id="@+id/ll_buslogo"
-        android:background="@drawable/background_transparent_border"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_toRightOf="@id/ll_carlogo"
-        android:layout_below="@id/tv_vehicle_type"
-        android:padding="5dp"
-        >
-        <ImageView
-            android:layout_gravity="center"
-            android:layout_width="40dp"
-            android:layout_height="30dp"
-            android:src="@drawable/buslogo"
-            />
-        <TextView
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Bus"/>
-    </LinearLayout>
+        android:weightSum="4">
 
-    <LinearLayout
-        android:layout_weight="1"
-        android:layout_marginLeft="20dp"
-        android:id="@+id/ll_bikelogo"
-        android:background="@drawable/background_transparent_border"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_toRightOf="@id/ll_buslogo"
-        android:layout_below="@id/tv_vehicle_type"
-        android:padding="5dp"
-        >
-        <ImageView
-            android:layout_gravity="center"
-            android:layout_width="40dp"
-            android:layout_height="30dp"
-            android:src="@drawable/bikelogo"
-            />
-        <TextView
-            android:layout_gravity="center"
+        <LinearLayout
+            android:id="@+id/ll_carlogo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bike"/>
-    </LinearLayout>
+            android:layout_weight="1"
+            android:background="@drawable/background_transparent_border"
+            android:orientation="vertical"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="7dp">
 
-    <LinearLayout
-        android:layout_weight="1"
-        android:layout_marginLeft="20dp"
-        android:id="@+id/ll_autologo"
-        android:background="@drawable/background_transparent_border"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_toRightOf="@id/ll_bikelogo"
-        android:layout_below="@id/tv_vehicle_type"
-        android:padding="5dp"
-        >
-        <ImageView
-            android:layout_gravity="center"
-            android:layout_width="40dp"
-            android:layout_height="30dp"
-            android:src="@drawable/autologo"
-            />
-        <TextView
-            android:layout_gravity="center"
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/carlogo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Car" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_buslogo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Auto"/>
-    </LinearLayout>
+            android:layout_below="@id/tv_vehicle_type"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/ll_carlogo"
+            android:layout_weight="1"
+            android:background="@drawable/background_transparent_border"
+            android:orientation="vertical"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="7dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/buslogo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Bus" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bikelogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_vehicle_type"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/ll_buslogo"
+            android:layout_weight="1"
+            android:background="@drawable/background_transparent_border"
+            android:orientation="vertical"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="7dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/bikelogo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Bike" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_autologo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_vehicle_type"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/ll_bikelogo"
+            android:layout_weight="1"
+            android:background="@drawable/background_transparent_border"
+            android:orientation="vertical"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="7dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/autologo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Auto" />
+        </LinearLayout>
     </LinearLayout>
 
     <TextView
-        android:layout_marginTop="10sp"
         android:id="@+id/tv_timedate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Time &amp; Date"
         android:layout_below="@id/ll_full"
-        android:textStyle="bold"/>
+        android:layout_marginTop="10sp"
+        android:fontFamily="@font/sansregular"
+        android:text="Time &amp; Date"
+        android:textStyle="bold" />
+
     <LinearLayout
         android:id="@+id/ll_timedate"
-android:layout_marginTop="10dp"
-        android:layout_below="@id/tv_timedate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/tv_timedate"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
         android:orientation="horizontal">
 
         <TextView
-            android:textAlignment="center"
-            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Today"
+            android:layout_weight="1"
             android:background="@drawable/background_transparent_border"
-            android:padding="10dp"/>
+            android:padding="10dp"
+            android:text="Today"
+            android:textAlignment="center" />
 
         <TextView
-            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginHorizontal="10sp"
             android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:background="@drawable/background_solidcolor_bordr"
+            android:backgroundTint="@color/mor"
+            android:padding="10dp"
             android:text="Tomorrow"
-            android:background="@drawable/background_transparent_border"
-            android:textColor="@color/mor"
-            android:padding="10dp"/>
+            android:textAlignment="center"
+            android:textColor="@color/white" />
 
         <TextView
-            android:textAlignment="center"
-            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="This week"
+            android:layout_weight="1"
             android:background="@drawable/background_transparent_border"
-            android:padding="10dp"/>
+            android:padding="10dp"
+            android:text="This week"
+            android:textAlignment="center" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/ll_choose_calendar"
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@id/ll_timedate">
+        android:layout_below="@id/ll_timedate"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
 
-       <ImageView
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:src="@drawable/calender"
-           />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Choose from calendar"/>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/next"
-            />
+            android:src="@drawable/calender" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_5ssp"
+            android:fontFamily="@font/sansregular"
+            android:text="Choose from calendar" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:src="@drawable/next" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_below="@id/ll_choose_calendar"
+        android:id="@+id/ll_select_pricerange"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp">
+        android:layout_below="@id/ll_choose_calendar"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/sansregular"
             android:text="Select price range"
-            android:textStyle="bold"/>
-
-
+            android:textStyle="bold" />
 
 
     </LinearLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-
-        android:layout_height="wrap_content"
-        android:text="RESET"
-
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/b_reset"
-       android:layout_alignParentBottom="true"
-       />
-
-    <Button
         android:layout_width="wrap_content"
-        android:backgroundTint="@color/mor"
         android:layout_height="wrap_content"
-        android:text="Apply"
-        android:textColor="@color/white"
-        android:id="@+id/b_apply"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:padding="5dp"
+        android:layout_below="@id/ll_select_pricerange"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/background_transparent_border"
+        android:text="RESET" />
 
-        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/b_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_select_pricerange"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/background_solidcolor_bordr"
+        android:backgroundTint="@color/mor"
+        android:padding="5dp"
+        android:text="Apply"
+        android:textColor="@color/white" />
 
 </RelativeLayout>

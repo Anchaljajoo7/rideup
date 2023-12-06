@@ -4,146 +4,181 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddPassangers"
-    android:layout_marginHorizontal="10dp">
+    android:layout_marginHorizontal="@dimen/_20sdp"
+    tools:context=".view.AddPassangers">
+
     <ImageView
         android:id="@+id/iv_arrow_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/arrow_back"/>
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/arrow_back" />
+
     <TextView
-        android:layout_toRightOf="@id/iv_arrow_back"
-        android:layout_marginLeft="10sp"
+        android:id="@+id/tv_addingpassanger"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_toRightOf="@id/iv_arrow_back"
+        android:fontFamily="@font/sansbold"
         android:text="Add passengers"
-        android:id="@+id/tv_addingpassanger"/>
+        android:textSize="18sp" />
 
     <RelativeLayout
-        android:padding="20dp"
-        android:layout_marginHorizontal="20dp"
-        android:background="@drawable/background_transparent_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/tv_addingpassanger"
         android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:background="@drawable/background_transparent_border"
+        android:padding="20dp">
 
         <TextView
             android:id="@+id/tv_passangerdetail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/sansbold"
             android:text="Passenger(s) Details"
-            android:textStyle="bold"
-            android:textSize="15sp"/>
-        <TextView
-            android:textStyle="bold"
-            android:layout_marginTop="10sp"
-            android:id="@+id/tv_name"
+            android:textSize="15sp"
+            android:textStyle="bold" />
 
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@id/tv_passangerdetail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-android:text="First name and Last Name"/>
+            android:layout_marginTop="10sp"
+            android:fontFamily="@font/sansregular"
+            android:text="First name and Last Name"
+            android:textStyle="bold" />
+
         <EditText
+
             android:id="@+id/et_name"
-            android:layout_marginTop="10dp"
-            android:paddingVertical="10dp"
-            android:paddingHorizontal="40dp"
-            android:layout_below="@id/tv_name"
-            android:background="@drawable/background_transparent_border"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_transparent_border"
             android:hint="First name and Last Name"
-            android:textSize="17dp"
+            android:padding="@dimen/_7ssp"
+
             />
+
         <LinearLayout
             android:id="@+id/ll_age_gender"
-            android:layout_below="@id/et_name"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-<LinearLayout
-    android:layout_weight="1"
-    android:id="@+id/ll_age"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-        <TextView
-            android:layout_marginTop="10sp"
-            android:id="@+id/tv_age"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Age"
-            android:textStyle="bold"/>
-    <EditText
-        android:layout_marginTop="10dp"
-        android:paddingVertical="10dp"
-        android:paddingHorizontal="30sp"
-        android:background="@drawable/background_transparent_border"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Age"/>
+            android:layout_below="@id/et_name">
 
-</LinearLayout>
-<LinearLayout
-    android:layout_weight="1"
-    android:layout_below="@id/et_name"
-    android:layout_toRightOf="@id/ll_age"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/ll_gender"
-    android:orientation="vertical">
-        <TextView
-            android:layout_marginTop="10sp"
-            android:layout_below="@id/et_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Gender"
-            android:textStyle="bold"/>
-    <LinearLayout
-        android:layout_marginTop="10dp"
-        android:background="@drawable/background_transparent_border"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:padding="13sp"
-            android:background="@drawable/background_transparent_border"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Male"/>
-        <TextView
-            android:padding="10sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Female"/>
+            <LinearLayout
+                android:id="@+id/ll_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
 
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:fontFamily="@font/sansregular"
+                    android:text="Age"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/background_transparent_border"
+                    android:hint="Age"
+                    android:paddingVertical="10dp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_20sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_name"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_toRightOf="@id/ll_age"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/et_name"
+                    android:layout_marginTop="10sp"
+                    android:fontFamily="@font/sansregular"
+                    android:text="Gender"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/background_transparent_border"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_solidcolor_bordr"
+                        android:backgroundTint="@color/mor"
+                        android:padding="13sp"
+                        android:text="Male"
+                        android:textAlignment="center"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10sp"
+                        android:text="Female"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
 
 
-</LinearLayout>
+            </LinearLayout>
         </LinearLayout>
+
         <CheckBox
             android:id="@+id/c_checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/ll_age_gender"/>
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_below="@id/ll_age_gender"
+            android:layout_marginTop="@dimen/_10sdp" />
+
         <TextView
             android:id="@+id/tv_future_booking"
-            android:layout_toRightOf="@id/c_checkbox"
-            android:layout_below="@id/ll_age_gender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/ll_age_gender"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@id/c_checkbox"
             android:text="Save this detail for future Booking"
-            android:layout_marginTop="12sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
-        <Button
-            android:layout_marginTop="10dp"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b_add"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/tv_future_booking"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/background_solidcolor_bordr"
+            android:backgroundTint="@color/mor"
             android:text="Add"
-            android:layout_marginBottom="20dp"/>
+            android:textColor="@color/white" />
 
     </RelativeLayout>
 

@@ -3,6 +3,7 @@ package com.example.rideup.view;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
@@ -10,6 +11,7 @@ import android.location.Location;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 import com.example.rideup.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -24,6 +26,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 public class Home extends AppCompatActivity implements OnMapReadyCallback {
 Button button;
+LinearLayout linearLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,16 +42,30 @@ Button button;
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showbottomsheet();
+                Intent intent=new Intent(Home.this, BookingList.class);
+            startActivity(intent);
+            finish();
+
+//                showbottomsheet();
+
             }
         });
+//        linearLayout=findViewById(R.id.ll_date);
+//        linearLayout.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent=new Intent(Home.this, BookingList.class);
+//                startActivity(intent);
+//                finish();
+//            }
+//        });
     }
 
-    private void showbottomsheet() {
-        BottomSheetDialog bottomSheetDialog=new BottomSheetDialog(this);
-        bottomSheetDialog.setContentView(R.layout.bottomsheet_selectlocation);
-        bottomSheetDialog.show();
-    }
+//    private void showbottomsheet() {
+//        BottomSheetDialog bottomSheetDialog=new BottomSheetDialog(this);
+//        bottomSheetDialog.setContentView(R.layout.bottomsheet_selectlocation);
+//        bottomSheetDialog.show();
+//    }
 
     @Override
     public void onMapReady(GoogleMap googleMap) {

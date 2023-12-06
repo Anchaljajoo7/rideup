@@ -2,17 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission
-        android:name="android.permission.INTERNET" />
-    <uses-permission
-        android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <uses-feature
         android:glEsVersion="0x00020000"
-        android:required="true"/>
-
-
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -25,39 +21,42 @@
         android:theme="@style/Theme.Rideup"
         tools:targetApi="31">
         <activity
-            android:name=".view.PaymentOptions"
-            android:exported="false" />
-        <activity
-            android:name=".view.BookingList"
+            android:name=".view.PaymentSuccesful"
             android:exported="false" />
         <activity
             android:name=".view.CarBookingSeater"
             android:exported="false" />
         <activity
-            android:name=".view.LaunchScreen"
+            android:name=".view.Home"
             android:exported="false" />
         <activity
             android:name=".view.Detail"
             android:exported="false" />
         <activity
-            android:name=".OnBoarding1"
-            android:exported="false" />
-        <activity
             android:name=".view.AddPassangers"
             android:exported="false" />
         <activity
-            android:name=".view.CompleteYourProfile"
+            android:name=".view.BookingList"
+            android:exported="false" />
+        <activity
+            android:name=".OnBoarding1"
+            android:exported="false" />
+        <activity
+            android:name=".view.LaunchScreen"
             android:exported="false" />
         <activity
             android:name=".view.OTPCode"
             android:exported="false" />
         <activity
+            android:name=".view.CompleteYourProfile"
+            android:exported="false" />
+        <activity
             android:name=".view.NumberVerification"
             android:exported="false" />
         <activity
-            android:name=".view.Home"
+            android:name=".view.PaymentOptions"
             android:exported="true"
-            android:theme="@style/Base.Theme.Rideup">
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -68,11 +67,9 @@
             android:name=".MainActivity"
             android:exported="false" />
 
-
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyAJOD_7E3nYx4uVDxLL52lL4VADZQdJ5Ps" />
@@ -80,7 +77,6 @@
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
-
     </application>
 
 </manifest>

@@ -4,182 +4,193 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CompleteYourProfile">
+    android:layout_marginHorizontal="10dp"
+    tools:context=".view.CompleteYourProfile">
 
-<ImageView
-    android:id="@+id/ivarrow"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:src="@drawable/arrow_back"
-    android:layout_margin="10dp"/>
+    <ImageView
+        android:id="@+id/ivarrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/arrow_back" />
 
     <TextView
         android:id="@+id/tv_complete_your_profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Complete your profile"
-        android:textStyle="bold"
-        android:layout_toRightOf="@id/ivarrow"
+        android:layout_marginLeft="@dimen/_5ssp"
         android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/ivarrow"
+        android:fontFamily="@font/sansmedium"
+        android:text="Complete your profile"
         android:textSize="20sp"
-        />
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/ivdp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/dp"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/ivarrow"
-        android:layout_marginVertical="20dp"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="20dp"
+        android:src="@drawable/dp" />
 
-<TextView
-    android:id="@+id/tv_dnt_worry"
-    android:layout_below="@id/ivdp"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Don't worry, only you can see your personal"
-    android:textStyle="bold"
-    android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/tv_dnt_worry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivdp"
+        android:text="Don't worry, only you can see your personal"
+        android:textSize="14sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tv_data_no_one_else"
-        android:layout_below="@id/tv_dnt_worry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="data.No one else will be able to see it."
-        android:textStyle="bold"
-        android:layout_marginLeft="10dp"/>
+        android:layout_below="@id/tv_dnt_worry"
+        android:layout_marginTop="@dimen/_3ssp"
+        android:text="data. No one else will be able to see it."
+        android:textSize="14sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tv_full_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Full Name"
-        android:textStyle="bold"
         android:layout_below="@id/tv_data_no_one_else"
-        android:layout_margin="10dp"
-        android:textSize="15sp"/>
+        android:layout_marginTop="10dp"
+        android:text="Full Name"
+        android:textSize="15sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/et_enter_full_name"
-        android:layout_below="@id/tv_full_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/tv_full_name"
+        android:layout_marginTop="@dimen/_5ssp"
+        android:background="@drawable/background_transparent_border"
         android:hint="Enter Full name"
-        android:layout_marginHorizontal="10dp"
-
-        android:padding="10dp"
         android:inputType="text"
-        android:background="@drawable/background_transparent_border"/>
+        android:padding="8dp" />
 
     <TextView
         android:id="@+id/tv_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email"
-        android:textStyle="bold"
         android:layout_below="@id/et_enter_full_name"
-        android:layout_margin="10dp"
-        android:textSize="15sp"/>
+        android:layout_marginTop="10dp"
+        android:text="Email"
+        android:textSize="15sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/et_enter_email"
-        android:layout_below="@id/tv_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/tv_email"
+        android:layout_marginTop="@dimen/_5ssp"
+        android:background="@drawable/background_transparent_border"
         android:hint="Enter Your Email"
-        android:layout_marginHorizontal="10dp"
-
-        android:padding="10dp"
         android:inputType="text"
-        android:background="@drawable/background_transparent_border"/>
+        android:padding="8dp" />
 
     <TextView
         android:id="@+id/tv_gender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Gender"
-        android:textStyle="bold"
-        android:textSize="15sp"
         android:layout_below="@id/et_enter_email"
-        android:layout_margin="10dp"/>
+        android:layout_marginTop="10dp"
+        android:text="Gender"
+        android:textSize="15sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tv_date_of_birth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Date of Birth"
-        android:textStyle="bold"
-        android:textSize="15sp"
         android:layout_below="@id/et_enter_email"
         android:layout_alignParentRight="true"
         android:layout_marginTop="10dp"
         android:layout_marginRight="30dp"
+        android:text="Date of Birth"
+        android:textSize="15sp"
+        android:textStyle="bold" />
 
-        />
     <androidx.cardview.widget.CardView
+        android:id="@+id/cv_for_gender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_gender"
-        android:id="@+id/cv_for_gender"
-        android:layout_marginLeft="10dp">
+        android:layout_marginTop="@dimen/_5ssp"
+        app:cardCornerRadius="@dimen/_5sdp">
+
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv_male"
-        android:text="Male"
-        android:padding="10dp"
-        android:background="@color/mor"/>
+
             <TextView
-                android:layout_toRightOf="@id/tv_male"
+                android:id="@+id/tv_male"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/background_solidcolor_bordr"
+                android:backgroundTint="@color/mor"
+                android:padding="10dp"
+                android:text="Male"
+                android:textColor="@color/white" />
+
+            <TextView
                 android:id="@+id/tv_female"
-                android:text="Female"
-                android:padding="10dp"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_male"
+                android:padding="10dp"
+                android:text="Female" />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@id/tv_gender"
         android:layout_alignParentEnd="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_marginTop="@dimen/_5ssp"
+        app:cardCornerRadius="@dimen/_5sdp">
+
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp">
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="12/6/96"
-            android:id="@+id/et_calendar"
-            />
-        <ImageView
-            android:layout_toRightOf="@id/et_calendar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/calender"
-            />
+            <TextView
+                android:id="@+id/et_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="12/6/96" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/et_calendar"
+                android:src="@drawable/calender" />
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
-
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/b_continue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="Continue"
-        android:layout_margin="10dp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/background_solidcolor_bordr"
         android:backgroundTint="@color/mor"
-        />
+        android:text="Continue"
+        android:textColor="@color/white" />
 
 
 </RelativeLayout>

@@ -4,32 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginHorizontal="10dp"
-    tools:context=".PaymentOptions"
-    android:background="@color/white">
+    android:layout_marginHorizontal="@dimen/_20sdp"
+    tools:context=".view.PaymentOptions">
 
     <ImageView
-        android:layout_marginTop="20dp"
         android:id="@+id/iv_arrow_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
         android:src="@drawable/arrow_back" />
 
     <TextView
-        android:layout_marginTop="20dp"
         android:id="@+id/tv_paymentoption"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10sp"
+        android:layout_marginTop="@dimen/_10sdp"
         android:layout_toRightOf="@id/iv_arrow_back"
+        android:fontFamily="@font/sansbold"
         android:text="Payment Options"
-        android:textStyle="bold" />
+        android:textSize="18sp" />
 
     <ScrollView
-        android:layout_above="@id/b_proceedtopay"
         android:id="@+id/sv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@id/b_proceedtopay"
         android:layout_below="@id/tv_paymentoption">
 
         <RelativeLayout
@@ -40,8 +40,10 @@
                 android:id="@+id/cv_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="10dp"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_transparent_border"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="@dimen/_10ssp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -58,6 +60,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10sp"
+                            android:fontFamily="@font/sansmedium"
                             android:text="Toyota Glanza"
                             android:textStyle="bold" />
 
@@ -66,17 +69,19 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="12sp"
+                                android:fontFamily="@font/sansmedium"
                                 android:text="Indore "
                                 android:textStyle="bold" />
 
                             <ImageView
                                 android:id="@+id/iv_jeep"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="60dp"
+                                android:layout_height="20dp"
                                 android:layout_marginLeft="20dp"
                                 android:layout_marginTop="10sp"
                                 android:src="@drawable/jeep" />
@@ -87,6 +92,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10sp"
+                            android:fontFamily="@font/sansmedium"
                             android:text="Vijay Nagar, Indore, Madhya..."
                             android:textSize="10sp"
                             android:textStyle="bold" />
@@ -119,14 +125,17 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="end"
                                 android:layout_marginTop="10sp"
+                                android:fontFamily="@font/sansmedium"
                                 android:text="Details"
-                                android:textColor="@color/mor" />
+                                android:textColor="@color/mor"
+                                android:textSize="@dimen/_10ssp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="end"
                                 android:layout_marginTop="12sp"
+                                android:fontFamily="@font/sansmedium"
                                 android:text="Bhopal"
                                 android:textStyle="bold" />
 
@@ -134,6 +143,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10sp"
+                                android:fontFamily="@font/sansmedium"
                                 android:text="Vijay Nagar, Indore...."
                                 android:textSize="10sp"
                                 android:textStyle="bold" />
@@ -153,7 +163,9 @@
                 android:layout_below="@id/cv_1"
                 android:layout_marginLeft="10sp"
                 android:layout_marginTop="10sp"
+                android:fontFamily="@font/sansbold"
                 android:text="Passenger Details"
+                android:textSize="15sp"
                 android:textStyle="bold" />
 
             <androidx.cardview.widget.CardView
@@ -161,8 +173,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_passangerdetail"
-                android:layout_marginHorizontal="10dp"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="@dimen/_10ssp">
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
@@ -174,7 +186,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20sp"
-                        android:text="Mr. Tej pratp" />
+                        android:fontFamily="@font/sansbold"
+                        android:text="Mr. Tej pratp"
+                        android:textSize="13sp" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -187,14 +201,17 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="end"
                             android:layout_marginTop="10sp"
+                            android:fontFamily="@font/sansmedium"
                             android:text="Edit"
-                            android:textColor="@color/mor" />
+                            android:textColor="@color/mor"
+                            android:textSize="@dimen/_10ssp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5sp"
                             android:layout_marginBottom="10sp"
+                            android:fontFamily="@font/sansmedium"
                             android:text="21yrs . Seat 3B" />
 
 
@@ -205,149 +222,161 @@
 
 
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/cv_3"
-                android:layout_marginTop="10dp"
-                android:layout_marginHorizontal="10dp"
-                android:layout_below="@id/cv_2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cv_2"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="@dimen/_10ssp">
+
                 <RelativeLayout
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                <ImageView
-                    android:id="@+id/iv_offers"
-                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/offers"/>
+                    android:layout_margin="@dimen/_10sdp">
 
-                <TextView
-                    android:layout_toRightOf="@id/iv_offers"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Offers"/>
+                    <ImageView
+                        android:id="@+id/iv_offers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/offers" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10ssp"
+                        android:layout_toRightOf="@id/iv_offers"
+                        android:fontFamily="@font/sansmedium"
+                        android:gravity="center"
+                        android:text="Offers" />
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/arrowright"
                         android:layout_alignParentEnd="true"
                         android:layout_marginHorizontal="10dp"
-                        android:layout_marginTop="10dp"/>
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/arrowright" />
 
 
                 </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
+
             <TextView
                 android:id="@+id/tv_cards"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Credit &amp; Debit Cards"
                 android:layout_below="@id/cv_3"
                 android:layout_marginLeft="10sp"
                 android:layout_marginTop="10sp"
-                android:textStyle="bold"/>
+                android:fontFamily="@font/sansbold"
+                android:text="Credit &amp; Debit Cards"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cv_4"
-                android:layout_below="@id/tv_cards"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/tv_cards"
                 android:layout_marginTop="10dp"
-                android:layout_marginHorizontal="10dp">
+                app:cardCornerRadius="@dimen/_10ssp">
+
                 <RelativeLayout
-                    android:padding="10dp"
-                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp">
+
                     <RelativeLayout
                         android:id="@+id/rl_axis"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
-                    <ImageView
+                        <ImageView
+                            android:id="@+id/iv_axis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/axis" />
 
-                        android:layout_marginTop="10dp"
-                        android:id="@+id/iv_axis"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/axis"/>
-                    
-                    <TextView
-                        android:textSize="13sp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="10sp"
-                        android:layout_toRightOf="@id/iv_axis"
-                        android:layout_width="wrap_content"
-                        android:text="Axis Bank **** **** **** 8395"
-                        android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/iv_axis"
+                            android:fontFamily="@font/sansregular"
+                            android:text="Axis Bank **** **** **** 8395"
+                            android:textSize="13sp" />
 
-                    <RadioButton
-                        android:layout_width="53dp"
-                        android:layout_height="47dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_marginRight="5dp" />
+                        <RadioButton
+                            android:layout_width="53dp"
+                            android:layout_height="47dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp" />
 
                     </RelativeLayout>
+
                     <RelativeLayout
                         android:id="@+id/rl_hdfc"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/rl_axis">
-                    <ImageView
-                        android:layout_marginTop="20sp"
-                        android:id="@+id/iv_hdfc"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/hdfc"
-                        />
 
-                    <TextView
-                        android:layout_marginTop="20sp"
-                        android:textSize="13sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="HDFC Bank **** **** **** 6246"
-                        android:layout_toRightOf="@id/iv_hdfc"
-                        android:layout_marginLeft="10sp"
-                        />
+                        <ImageView
+                            android:id="@+id/iv_hdfc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="20sp"
+                            android:src="@drawable/hdfc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="20sp"
+                            android:layout_toRightOf="@id/iv_hdfc"
+                            android:fontFamily="@font/sansregular"
+                            android:text="HDFC Bank **** **** **** 6246"
+                            android:textSize="13sp" />
+
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
-                            android:layout_marginRight="5dp"
-                            />
+                            android:layout_marginRight="5dp" />
                     </RelativeLayout>
 
                     <RelativeLayout
-                        android:layout_marginTop="10dp"
-                        android:layout_below="@id/rl_hdfc"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rl_hdfc"
+                        android:layout_marginTop="10dp">
 
                         <ImageView
                             android:id="@+id/ivadd"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/addnewcard"/>
+                            android:src="@drawable/addnewcard" />
 
                         <TextView
-                            android:layout_toRightOf="@id/ivadd"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Add New Card"
+                            android:layout_centerVertical="true"
                             android:layout_marginLeft="10sp"
-                            android:textSize="13sp"
-                            />
-
-
-
+                            android:layout_toRightOf="@id/ivadd"
+                            android:fontFamily="@font/sansregular"
+                            android:text="Add New Card"
+                            android:textSize="13sp" />
 
 
                     </RelativeLayout>
@@ -361,32 +390,27 @@
                 android:id="@+id/tv_upi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="UPI"
                 android:layout_below="@id/cv_4"
                 android:layout_marginLeft="10sp"
                 android:layout_marginTop="10sp"
-                android:textStyle="bold"/>
-
-
-
-
-
-
-
+                android:text="UPI"
+                android:textStyle="bold" />
 
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cv_5"
-                android:layout_below="@id/tv_upi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/tv_upi"
                 android:layout_marginTop="10dp"
-                android:layout_marginHorizontal="10dp">
+                app:cardCornerRadius="@dimen/_10ssp">
+
                 <RelativeLayout
-                    android:padding="10dp"
-                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp">
+
                     <RelativeLayout
                         android:id="@+id/rl_googlepay"
                         android:layout_width="match_parent"
@@ -394,20 +418,20 @@
 
                         <ImageView
 
-                            android:layout_marginTop="10dp"
                             android:id="@+id/iv_gp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/googlepay"/>
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/googlepay" />
 
                         <TextView
-                            android:textSize="13sp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginLeft="10sp"
-                            android:layout_toRightOf="@id/iv_gp"
                             android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/iv_gp"
                             android:text="Google Pay"
-                            android:layout_height="wrap_content"/>
+                            android:textSize="13sp" />
 
                         <RadioButton
                             android:layout_width="wrap_content"
@@ -416,63 +440,58 @@
                             android:layout_marginRight="5dp" />
 
                     </RelativeLayout>
+
                     <RelativeLayout
                         android:id="@+id/rl_phonepay"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/rl_googlepay">
+
                         <ImageView
-                            android:layout_marginTop="20sp"
                             android:id="@+id/iv_pp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/phonepay"
-                            />
+                            android:layout_marginTop="20sp"
+                            android:src="@drawable/phonepay" />
 
                         <TextView
-                            android:layout_marginTop="20sp"
-                            android:textSize="13sp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="PhonePe"
-                            android:layout_toRightOf="@id/iv_pp"
                             android:layout_marginLeft="10sp"
-                            />
+                            android:layout_marginTop="20sp"
+                            android:layout_toRightOf="@id/iv_pp"
+                            android:text="PhonePe"
+                            android:textSize="13sp" />
+
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
-                            android:layout_marginRight="5dp"
-                            />
+                            android:layout_marginRight="5dp" />
                     </RelativeLayout>
 
                     <RelativeLayout
-                        android:layout_marginTop="10dp"
-                        android:layout_below="@id/rl_phonepay"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rl_phonepay"
+                        android:layout_marginTop="10dp">
 
                         <ImageView
                             android:id="@+id/ivaddupi"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/addnewcard"/>
+                            android:src="@drawable/addnewcard" />
 
                         <TextView
-                            android:layout_toRightOf="@id/ivaddupi"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Add New UPI ID"
                             android:layout_marginLeft="10sp"
-                            android:textSize="13sp"
-                            />
-
-
-
+                            android:layout_toRightOf="@id/ivaddupi"
+                            android:text="Add New UPI ID"
+                            android:textSize="13sp" />
 
 
                     </RelativeLayout>
-
 
 
                 </RelativeLayout>
@@ -484,27 +503,28 @@
                 android:id="@+id/tv_moreoption"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="More Payment Options"
                 android:layout_below="@id/cv_5"
                 android:layout_marginLeft="10sp"
                 android:layout_marginTop="10sp"
-                android:textStyle="bold"/>
-
-
+                android:text="More Payment Options"
+                android:textStyle="bold" />
 
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cv_6"
-                android:layout_below="@id/tv_moreoption"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/tv_moreoption"
                 android:layout_marginTop="10dp"
-                android:layout_marginHorizontal="10dp">
+                android:layout_marginBottom="@dimen/_20sdp"
+                app:cardCornerRadius="@dimen/_10ssp">
+
                 <RelativeLayout
-                    android:padding="10dp"
-                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp">
+
                     <RelativeLayout
                         android:id="@+id/rl_wallet"
                         android:layout_width="match_parent"
@@ -512,88 +532,83 @@
 
                         <ImageView
 
-                            android:layout_marginTop="10dp"
                             android:id="@+id/iv_wallet"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/wallet"/>
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/wallet" />
 
                         <TextView
-                            android:textSize="13sp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginLeft="10sp"
-                            android:layout_toRightOf="@id/iv_wallet"
                             android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/iv_wallet"
                             android:text="Wallet"
-                            android:layout_height="wrap_content"/>
+                            android:textSize="13sp" />
 
                         <ImageView
-                            android:src="@drawable/arrowright"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
-                            android:layout_marginRight="5dp" />
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/arrowright" />
 
                     </RelativeLayout>
+
                     <RelativeLayout
                         android:id="@+id/rl_netbanking"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/rl_wallet">
+
                         <ImageView
-                            android:layout_marginTop="20sp"
                             android:id="@+id/iv_netbanking"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/netbanking"
-                            />
+                            android:layout_marginTop="20sp"
+                            android:src="@drawable/netbanking" />
 
                         <TextView
-                            android:layout_marginTop="20sp"
-                            android:textSize="13sp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Net Banking"
-                            android:layout_toRightOf="@id/iv_netbanking"
                             android:layout_marginLeft="10sp"
-                            />
+                            android:layout_marginTop="20sp"
+                            android:layout_toRightOf="@id/iv_netbanking"
+                            android:text="Net Banking"
+                            android:textSize="13sp" />
+
                         <ImageView
-                            android:src="@drawable/arrowright"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
-                            />
+                            android:src="@drawable/arrowright" />
                     </RelativeLayout>
 
                     <RelativeLayout
-                        android:layout_marginTop="10dp"
-                        android:layout_below="@id/rl_netbanking"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rl_netbanking"
+                        android:layout_marginTop="10dp">
 
                         <ImageView
                             android:id="@+id/ivcashdeleivery"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/addnewcard"
-                            android:layout_marginBottom="20dp"/>
+                            android:layout_marginBottom="20dp"
+                            android:src="@drawable/addnewcard" />
 
                         <TextView
-                            android:layout_toRightOf="@id/ivcashdeleivery"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Cash on Delivery"
                             android:layout_marginLeft="10sp"
-                            android:textSize="13sp"
                             android:layout_marginBottom="20sp"
-                            />
-
-
-
+                            android:layout_toRightOf="@id/ivcashdeleivery"
+                            android:text="Cash on Delivery"
+                            android:textSize="13sp" />
 
 
                     </RelativeLayout>
-
 
 
                 </RelativeLayout>
@@ -602,51 +617,46 @@
             </androidx.cardview.widget.CardView>
 
 
-
-
-
-
-
-
-
         </RelativeLayout>
     </ScrollView>
 
-    <Button
-        android:layout_marginTop="20dp"
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/b_proceedtopay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background_solidcolor_bordr"
+        android:backgroundTint="@color/mor"
+        android:paddingHorizontal="@dimen/_7sdp"
         android:text="Proceed to Pay"
-        android:layout_marginBottom="20dp"/>
+        android:textColor="@color/white" />
 
     <LinearLayout
-        android:layout_marginTop="20dp"
         android:id="@+id/ll_rupess"
-        android:layout_marginBottom="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:orientation="vertical"
-        android:layout_marginLeft="20sp">
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/sansmedium"
             android:text="₹6,699"
-            android:textStyle="bold"
-            android:layout_marginRight="20sp"/>
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/sansregular"
             android:text="View detailed bill "
-            android:textStyle="bold"
             android:textColor="@color/mor"
-            android:layout_marginRight="20sp"/>
+            android:textStyle="bold" />
 
 
     </LinearLayout>

@@ -20,7 +20,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 import java.util.ArrayList;
 
 public class BookingList extends AppCompatActivity implements RideupRecyclerAdapter.selectVechile {
-    ImageView imageView;
+    ImageView imageView,imageView1;
     TextView textView;
     LinearLayout linearLayout;
 RecyclerView recyclerView;
@@ -33,13 +33,13 @@ RecyclerView recyclerView;
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(linearLayoutManager);
         ArrayList<BookingListItem> listItems = new ArrayList<>();
-        BookingListItem item1 = new BookingListItem("Toyota Glanza", "5 Seater | Black","258 Ratings","Vijay Nagar, Indore,Madhya Pradesh 452011",
+        BookingListItem item1 = new BookingListItem("Toyota Glanza", "5 Seater | Black","258 Ratings","Vijay Nagar, Indore, Madhya Pradesh 452011",
                 "Cameron Williamson |","Male","Driver","21 years old","4 seats available","₹ 1580.00");
-        BookingListItem item2 = new BookingListItem("Toyota Glanza", "5 Seater | Black","258 Ratings","Vijay Nagar, Indore,Madhya Pradesh 452011",
+        BookingListItem item2 = new BookingListItem("Toyota Glanza", "5 Seater | Black","258 Ratings","Vijay Nagar, Indore, Madhya Pradesh 452011",
                 "Cameron Williamson |","Male","Driver","21 years old","4 seats available","₹ 1580.00");
-        BookingListItem item3 = new BookingListItem("Toyota Glanza", "5 Seater | Black","258 Ratings ","Vijay Nagar, Indore,Madhya Pradesh 452011",
+        BookingListItem item3 = new BookingListItem("Toyota Glanza", "5 Seater | Black","258 Ratings ","Vijay Nagar, Indore, Madhya Pradesh 452011",
                 "Cameron Williamson |","Male","Driver","21 years old","4 seats available","₹ 1580.00");
-        BookingListItem item4 = new BookingListItem("Toyota Glanza", "5 Seater | Black","258 Ratings","Vijay Nagar, Indore,Madhya Pradesh 452011",
+        BookingListItem item4 = new BookingListItem("Toyota Glanza", "5 Seater | Black","258 Ratings","Vijay Nagar, Indore, Madhya Pradesh 452011",
                 "Cameron Williamson |","Male","Driver","21 years old","4 seats available","₹ 180.00");
 
         listItems.add(item1);
@@ -77,7 +77,15 @@ linearLayout.setOnClickListener(new View.OnClickListener() {
         showbottomsheetforfilters();
     }
 });
-
+imageView1=findViewById(R.id.iv_arrow_back);
+imageView1.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Intent intent=new Intent(BookingList.this, Home.class);
+        startActivity(intent);
+        finish();
+    }
+});
 
     }
 

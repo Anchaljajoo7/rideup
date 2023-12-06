@@ -2,22 +2,26 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:elevation="2dp"
+          >
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
     <ImageView
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/ivsuccessfulimage"
         android:src="@drawable/successfulpop"
         android:layout_centerHorizontal="true"/>
     <TextView
+        android:layout_marginTop="10sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/ivsuccessfulimage"
@@ -25,7 +29,7 @@
         android:text="Sign up Successful"
         android:textStyle="bold"
         android:layout_centerInParent="true"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:textColor="@color/mor"
 
         />
@@ -47,7 +51,7 @@
         android:layout_height="wrap_content"
         android:text="You will be directed to the homepage"
         android:layout_centerInParent="true"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="10dp"/>
 
     <ImageView
         android:id="@+id/iv_processing"
@@ -56,7 +60,8 @@
         android:src="@drawable/processing"
         android:layout_below="@id/tv_direct_to_the_homepage"
         android:layout_centerInParent="true"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
 
 
         </RelativeLayout>

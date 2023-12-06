@@ -4,143 +4,149 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BookingList">
+    tools:context=".view.BookingList">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/mor"
-        app:cardCornerRadius="4dp"
-        >
+        app:cardCornerRadius="4dp">
+
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginVertical="20dp">
-<ImageView
 
-    android:id="@+id/iv_arrow_back"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:src="@drawable/arrow_back"
-    app:tint="@color/white" />
-        
-        <TextView
-            android:id="@+id/tv_indorebhopal"
-            android:layout_toRightOf="@id/iv_arrow_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Indore - Bhopal"
-            android:layout_marginLeft="10sp"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textSize="15sp"
-            />
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/edit"
-            android:layout_toRightOf="@id/tv_indorebhopal"/>
-
-            <TextView
-                android:layout_below="@id/tv_indorebhopal"
+            <ImageView
+                android:id="@+id/iv_arrow_back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Thu,12 October"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:src="@drawable/arrow_back"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_indorebhopal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_toRightOf="@id/iv_arrow_back"
+                android:fontFamily="@font/sansmedium"
+                android:text="Indore - Bhopal"
                 android:textColor="@color/white"
-                android:layout_marginLeft="32dp" />
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_indorebhopal"
+                android:layout_marginLeft="46dp"
+                android:text="Thu, 12 October"
+                android:textColor="@color/white" />
 
             <ImageView
                 android:id="@+id/iv_edit1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/edit1"
                 android:layout_alignParentEnd="true"
-                android:layout_marginRight="12dp"/>
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/edit1" />
 
 
-</RelativeLayout>
+        </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
-<LinearLayout
-    android:layout_marginLeft="5sp"
-    android:id="@+id/ll_filter"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:layout_below="@id/cv"
-    android:layout_marginTop="20dp"
-    android:background="@drawable/background_transparent_border"
-    android:padding="8dp">
-<ImageView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:src="@drawable/filter"
-   />
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/ll_filter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Filters"
+        android:layout_below="@id/cv"
+        android:layout_marginHorizontal="@dimen/_10sdp"
         android:layout_marginLeft="5sp"
-        />
-</LinearLayout>
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/relative"
-    android:layout_below="@id/cv"
-    android:layout_toRightOf="@id/ll_filter"
-   >
-    <HorizontalScrollView
-        android:id="@+id/rl_scrollview"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_transparent_border"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/filter" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:fontFamily="@font/sansregular"
+            android:text="Filters" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scrollbars="none"
-        >
-        <LinearLayout
+        android:layout_below="@id/cv"
+        android:layout_toRightOf="@id/ll_filter">
+
+        <HorizontalScrollView
+            android:id="@+id/rl_scrollview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-    <TextView
-        android:id="@+id/tv_most_popular"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="sort: Most popular"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/background_transparent_border"
-        android:padding="8dp"
-        android:layout_marginLeft="5sp"/>
+            android:scrollbars="none">
 
-    <TextView
-        android:id="@+id/tv_single_seat"
-        android:layout_toRightOf="@id/tv_most_popular"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Single Seat"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/background_transparent_border"
-        android:padding="8dp"
-        android:layout_marginLeft="5sp"/>
-    <TextView
-        android:id="@+id/tv_single_seat1"
-        android:layout_toRightOf="@id/tv_single_seat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Single Seat"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/background_transparent_border"
-        android:padding="8dp"
-        android:layout_marginLeft="5sp"/>
-        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-    </HorizontalScrollView>
-</RelativeLayout>
+                <TextView
+                    android:id="@+id/tv_most_popular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/background_transparent_border"
+                    android:fontFamily="@font/sansregular"
+                    android:padding="8dp"
+                    android:text="sort: Most popular" />
+
+                <TextView
+                    android:id="@+id/tv_single_seat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/tv_most_popular"
+                    android:background="@drawable/background_transparent_border"
+                    android:fontFamily="@font/sansregular"
+                    android:padding="8dp"
+                    android:text="Single Seat" />
+
+                <TextView
+                    android:id="@+id/tv_single_seat1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/tv_single_seat"
+                    android:background="@drawable/background_transparent_border"
+                    android:fontFamily="@font/sansregular"
+                    android:padding="8dp"
+                    android:text="Single Seat" />
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </RelativeLayout>
+
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_below="@id/relative"
+        android:id="@+id/rvrecyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/rvrecyclerview"/>
+        android:layout_below="@id/relative"
+        android:layout_marginHorizontal="@dimen/_10sdp" />
 
 </RelativeLayout>

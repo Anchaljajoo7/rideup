@@ -3,7 +3,10 @@ package com.example.rideup.view;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.example.rideup.R;
 import com.example.rideup.TabRideupAdapter1;
@@ -12,12 +15,26 @@ import com.google.android.material.tabs.TabLayout;
 public class CarBookingSeater extends AppCompatActivity {
     TabLayout t1;
     ViewPager v1;
-
+ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_car_booking_seater);
         initial();
+        second();
+    }
+
+    private void second() {
+        imageView=findViewById(R.id.iv_arrow_back);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(CarBookingSeater.this, Detail.class);
+                startActivity(intent);
+                finish();
+
+            }
+        });
     }
 
     private void initial() {

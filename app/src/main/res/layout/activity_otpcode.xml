@@ -4,115 +4,120 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OTPCode">
+    android:layout_marginHorizontal="10dp"
+    tools:context=".view.OTPCode">
 
     <include
         android:id="@+id/ivrideuplogo"
-        layout="@layout/ride_up_circle_logo"/>
+        layout="@layout/ride_up_circle_logo" />
 
     <TextView
         android:id="@+id/tv_we_just_sent_an_sms"
-        android:layout_below="@id/ivrideuplogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/ivrideuplogo"
+        android:layout_marginLeft="@dimen/_5ssp"
+        android:fontFamily="@font/sansmedium"
         android:text="We just sent an SMS"
-        android:textStyle="bold"
-        android:textSize="30sp"
-        android:layout_marginLeft="10dp"/>
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/tvedit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Edit"
-        android:textColor="@color/mor"
-        android:layout_marginRight="10dp"
-        android:id="@+id/tvedit"
         android:layout_below="@id/tv_we_just_sent_an_sms"
         android:layout_alignParentEnd="true"
-        />
+        android:layout_marginTop="@dimen/_10ssp"
+        android:layout_marginRight="10dp"
+        android:text="Edit"
+        android:textColor="@color/mor" />
 
     <TextView
         android:id="@+id/tv_enter_the_security_code"
-        android:layout_below="@id/tv_we_just_sent_an_sms"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/tv_we_just_sent_an_sms"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="@dimen/_10ssp"
         android:text="Enter the security code we sent to"
-        android:textSize="17sp"
-        android:layout_marginLeft="10dp"/>
+        android:textSize="14sp" />
 
     <TextView
         android:id="@+id/tv_32123456789"
-        android:layout_below="@id/tv_enter_the_security_code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/tv_enter_the_security_code"
+        android:layout_marginLeft="5dp"
         android:text="+32 123456789"
-        android:textSize="17sp"
-        android:layout_marginLeft="10dp"/>
+        android:textSize="14sp" />
 
 
     <com.chaos.view.PinView
         android:id="@+id/potp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:itemCount="6"
-        android:cursorVisible="true"
         android:layout_below="@id/tv_32123456789"
-        app:itemRadius="10dp"
-        android:inputType="number"
         android:layout_marginVertical="20dp"
         android:layout_marginLeft="10dp"
-        />
+        android:cursorVisible="true"
+        android:inputType="number"
+        app:itemCount="6"
+        app:itemRadius="10dp" />
 
     <TextView
         android:id="@+id/tv_didnot_get_code"
-        android:layout_below="@id/potp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Didn't get the code?"
-        android:textStyle="bold"
-        android:textSize="19sp"
+        android:layout_below="@id/potp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"/>
+        android:text="Didn't get the code?"
+        android:textSize="15sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tv_Resend_it"
-        android:layout_toRightOf="@id/tv_didnot_get_code"
-        android:layout_below="@id/potp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Resend it"
-        android:textStyle="bold"
-        android:textSize="19sp"
+        android:layout_below="@id/potp"
+        android:layout_marginLeft="@dimen/_4ssp"
         android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv_didnot_get_code"
+        android:text="Resend it"
         android:textColor="@color/mor"
-        />
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
     <RadioButton
         android:id="@+id/rb_for_otp"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
         android:layout_below="@id/potp"
-      android:layout_toLeftOf="@id/tv45s"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+
+        android:layout_toLeftOf="@id/tv45s" />
 
     <TextView
-        android:layout_marginTop="10dp"
+        android:gravity="center"
         android:id="@+id/tv45s"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="45s"
         android:layout_below="@id/potp"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="10dp"
-        android:textStyle="bold"
-        />
+        android:layout_marginTop="10dp"
+        android:text="45s"
+        android:textStyle="bold" />
 
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        android:textColor="@color/white"
+        android:background="@drawable/background_solidcolor_bordr"
+        android:backgroundTint="@color/mor"
         android:id="@+id/b1_verify_otp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="Verify OTP"
-        android:layout_margin="10dp"
-        android:backgroundTint="@color/mor"
-        />
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:text="Verify OTP" />
 </RelativeLayout>

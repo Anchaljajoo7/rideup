@@ -6,9 +6,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-
-        >
+        android:layout_marginVertical="10dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -44,8 +42,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_toyoto_glanza"
+                android:layout_marginTop="@dimen/_5ssp"
                 android:text="5 Seater | Black"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp" />
 
             <RatingBar
                 android:id="@+id/iv_stars"
@@ -55,21 +55,21 @@
                 android:layout_below="@id/tv_toyoto_glanza"
                 android:layout_centerInParent="true"
                 android:layout_centerVertical="true"
-                android:layout_marginTop="3dp"
+                android:layout_marginTop="@dimen/_5ssp"
                 android:layout_toRightOf="@id/tv_5_star"
                 android:isIndicator="false"
                 android:numStars="5"
-                android:stepSize="0.1"
-
-                />
+                android:stepSize="0.1" />
 
             <TextView
                 android:id="@+id/tv_ratings"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_toyoto_glanza"
+                android:layout_marginTop="@dimen/_5ssp"
                 android:layout_toRightOf="@id/iv_stars"
-                android:text="258 Ratings" />
+                android:text="258 Ratings"
+                android:textSize="@dimen/_10ssp" />
 
             <ImageView
                 android:id="@+id/ivlocation"
@@ -87,7 +87,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_toRightOf="@id/ivlocation"
                 android:text="Vijay Nagar, Indore, Madhya Pradesh 452011"
-                android:textSize="12sp"
+                android:textSize="@dimen/_10ssp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -103,9 +103,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/ivlocation"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/iv_driverimage"
+                android:gravity="center"
                 android:text="Cameron Williamson |"
                 android:textSize="12sp" />
 
@@ -114,6 +117,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/ivlocation"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="15dp"
                 android:layout_toRightOf="@id/tv_drivername"
@@ -124,16 +129,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/ivlocation"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/iv_male"
-                android:text="Male" />
+                android:gravity="center"
+                android:text="Male"
+                android:textSize="@dimen/_10ssp" />
 
             <ImageView
                 android:id="@+id/iv_driver"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/ivlocation"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="15dp"
                 android:layout_toRightOf="@id/tv_male"
@@ -144,10 +155,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/ivlocation"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/iv_driver"
-                android:text="Driver" />
+                android:gravity="center"
+                android:text="Driver"
+                android:textSize="@dimen/_10ssp" />
 
             <TextView
                 android:id="@+id/tv_age"
@@ -156,15 +171,19 @@
                 android:layout_below="@id/ivlocation"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="10dp"
-                android:text="21 years old" />
+                android:text="21 years old"
+                android:textSize="@dimen/_7ssp"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:id="@+id/ll_seatsavailable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/iv_driverimage"
-                android:background="@drawable/background_transparent_border"
-                android:orientation="horizontal">
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/background_solidcolor_bordr"
+                android:orientation="horizontal"
+                android:padding="@dimen/_2sdp">
 
                 <ImageView
                     android:id="@+id/iv_seats_available"
@@ -177,6 +196,7 @@
                     android:id="@+id/tv_seats_available"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/sansregular"
                     android:padding="1sp"
                     android:text="4 seats available" />
             </LinearLayout>
@@ -188,10 +208,13 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/iv_driverimage"
                 android:layout_marginLeft="5sp"
+                android:layout_marginTop="@dimen/_8sdp"
                 android:layout_toRightOf="@id/ll_seatsavailable"
-                android:background="@drawable/background_transparent_border"
+                android:background="@drawable/background_solidcolor_bordr"
+                android:fontFamily="@font/sansregular"
                 android:padding="3dp"
-                android:text="₹ 1580.00" />
+                android:text="₹ 1580.00"
+                android:textColor="@color/mor" />
 
             <TextView
                 android:id="@+id/tv_book"
@@ -199,9 +222,13 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/iv_driverimage"
                 android:layout_alignParentEnd="true"
-                android:background="@drawable/background_transparent_border"
-                android:padding="3sp"
-                android:text="Book" />
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/background_solidcolor_bordr"
+                android:backgroundTint="@color/mor"
+                android:paddingHorizontal="@dimen/_7ssp"
+                android:paddingVertical="5sp"
+                android:text="Book"
+                android:textColor="@color/white" />
 
 
         </RelativeLayout>

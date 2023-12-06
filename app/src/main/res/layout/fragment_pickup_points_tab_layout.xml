@@ -3,64 +3,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".PickupPointsTabLayout">
+
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="10dp"
-        >
+        android:layout_marginHorizontal="10dp">
 
-    <!-- TODO: Update blank fragment layout -->
-    <ImageView
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/pickuplocation"
-        android:id="@+id/iv_pickup"/>
-    <TextView
-        android:layout_marginLeft="10sp"
-        android:layout_toRightOf="@id/iv_pickup"
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Select Pickup Point(2) "
-        android:textStyle="bold"/>
+        <!-- TODO: Update blank fragment layout -->
+        <ImageView
+            android:id="@+id/iv_pickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/pickuplocation" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/iv_pickup"
+            android:fontFamily="@font/sansregular"
+            android:text="Select Pickup Point(2) "
+            android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/rb1"
-            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-android:layout_below="@id/iv_pickup"/>
-        <TextView
-            android:layout_toRightOf="@id/rb1"
-            android:id="@+id/tv_pickuplocation"
-            android:layout_marginTop="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Vijay Nagar, Indore, Madhya Pradesh 452011"
             android:layout_below="@id/iv_pickup"
-/>
-    <RadioButton
-        android:id="@+id/rb2"
-        android:layout_marginTop="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tv_pickuplocation"/>
+            android:layout_marginTop="10dp" />
+
         <TextView
-            android:layout_toRightOf="@id/rb2"
-            android:layout_marginTop="10dp"
+            android:id="@+id/tv_pickuplocation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/iv_pickup"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/rb1"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Vijay Nagar, Indore, Madhya Pradesh 452011"
+            android:textSize="@dimen/_10ssp" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_pickuplocation"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_pickuplocation"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/rb2"
+            android:fontFamily="@font/poppinsregular"
             android:text="syaji Petrol Pump Indore, Madhya Pradesh 452011"
-            android:layout_below="@id/tv_pickuplocation"/>
-        <Button
+            android:textSize="@dimen/_10ssp" />
+
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:text="Next"/>
+            android:background="@drawable/background_solidcolor_bordr"
+            android:backgroundTint="@color/mor"
+            android:text="Next"
+            android:textColor="@color/white" />
     </RelativeLayout>
-
 
 
 </FrameLayout>
