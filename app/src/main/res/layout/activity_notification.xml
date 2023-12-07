@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.Notification"
+    android:layout_marginHorizontal="@dimen/_20sdp">
+
+    <ImageView
+        android:id="@+id/ivarrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/arrow_back" />
+
+    <TextView
+        android:id="@+id/tv_Notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5ssp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/ivarrow"
+        android:fontFamily="@font/sansmedium"
+        android:text="Notification"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+android:id="@+id/rvrecyclerview"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_below="@id/tv_Notification"/>
+</RelativeLayout>

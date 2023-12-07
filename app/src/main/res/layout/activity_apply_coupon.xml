@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.ApplyCoupon"
-    android:layout_marginHorizontal="@dimen/_10sdp"
-    android:background="@color/white">
+    android:layout_marginHorizontal="@dimen/_20sdp"
+    >
 
     <ImageView
         android:id="@+id/ivarrow"
@@ -26,25 +26,33 @@
         android:text="Offers"
         android:textSize="20sp"
         android:textStyle="bold" />
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@id/tv_offers"
+        android:id="@+id/rl_enter_coupen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
     <RelativeLayout
+        android:background="@drawable/background_solidcolor_bordr"
+        android:backgroundTint="@color/white"
 
-        android:id="@+id/rl_enter_coupen"
-        android:background="@drawable/background_transparent_border"
-        android:layout_below="@id/tv_offers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 >
         <EditText
+            android:fontFamily="@font/sansbold"
             android:id="@+id/et_enter_coupen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
            android:background="@color/transparent"
-            android:layout_marginTop="@dimen/_5ssp"
+android:textColor="@color/gray"
             android:hint="Enter Coupen Code"
             android:inputType="text"
             android:padding="8dp" />
         <TextView
+            android:fontFamily="@font/sansbold"
+            android:layout_centerInParent="true"
             android:layout_marginRight="@dimen/_10sdp"
             android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
@@ -54,8 +62,10 @@ android:text="Apply"
             />
 
     </RelativeLayout>
+    </androidx.cardview.widget.CardView>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvrecyclerview"
         android:layout_below="@id/rl_enter_coupen"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

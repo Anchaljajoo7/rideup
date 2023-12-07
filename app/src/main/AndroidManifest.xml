@@ -21,13 +21,19 @@
         android:theme="@style/Theme.Rideup"
         tools:targetApi="31">
         <activity
+            android:name=".view.LaunchScreen"
+            android:exported="false" />
+        <activity
+            android:name=".view.ApplyCoupon"
+            android:exported="false" />
+        <activity
             android:name=".view.MyBooking"
             android:exported="false" />
         <activity
             android:name=".view.Account"
             android:exported="false" />
         <activity
-            android:name=".view.LaunchScreen"
+            android:name=".view.Wallet"
             android:exported="false" />
         <activity
             android:name=".view.PaymentSuccesful"
@@ -63,7 +69,7 @@
             android:name=".view.NumberVerification"
             android:exported="false" />
         <activity
-            android:name=".view.ApplyCoupon"
+            android:name=".view.Notification"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

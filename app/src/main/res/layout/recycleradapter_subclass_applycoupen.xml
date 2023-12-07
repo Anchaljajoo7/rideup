@@ -1,6 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        app:cardCornerRadius="@dimen/_10sdp"
+       >
+
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_axis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/axismain"/>
+
+    <TextView
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:fontFamily="@font/sansbold"
+        android:id="@+id/tv_axis200"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AXIS200"
+        android:layout_toRightOf="@id/iv_axis"/>
+
+    <TextView
+        android:fontFamily="@font/sansbold"
+        android:textColor="@color/mor"
+        android:id="@+id/tv_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="APPLY"
+        android:layout_alignParentRight="true"/>
+            <TextView
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/sansbold"
+                android:textColor="@color/mor"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/tv_save_rupee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save ₹122 on this orders using Axis Bank \n
+Select Credit Cards! "
+                android:layout_below="@id/tv_axis200"/>
+<ImageView
+    android:layout_marginTop="@dimen/_5sdp"
+    android:id="@+id/iv_dottedline"
+            android:layout_below="@id/tv_save_rupee"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:src="@drawable/dotted"
+            android:layerType="software"
+    app:tint="@color/gray" />
+
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/sansbold"
+                android:id="@+id/tv_content"
+            android:layout_below="@id/iv_dottedline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="It is a long established fact that a reader will be \n
+ distracted by the readable content of a page \n
+when looking at its layout. The point o"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
