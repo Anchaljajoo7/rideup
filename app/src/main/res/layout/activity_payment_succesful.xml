@@ -4,59 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.PaymentSuccesful"
-    >
+    android:layout_marginBottom="@dimen/_20sdp"
+    tools:context=".view.PaymentSuccesful">
 
     <TextView
-        android:layout_marginTop="@dimen/_10ssp"
-        android:gravity="center"
-        android:textSize="@dimen/_20ssp"
         android:id="@+id/tv_enjoyourservice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Please enjoy our service"
-        android:textStyle="bold"/>
-
-<LinearLayout
-    android:layout_centerInParent="true"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-
-    <ImageView
-        android:layout_gravity="center"
-        android:id="@+id/iv_success"
-android:layout_below="@id/tv_enjoyourservice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/checked"/>
-
-
-    <TextView
-        android:layout_marginTop="@dimen/_20ssp"
+        android:layout_marginTop="@dimen/_10ssp"
+        android:fontFamily="@font/sansbold"
         android:gravity="center"
-        android:layout_below="@id/iv_success"
+        android:text="Please enjoy our service"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold" />
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Your payment is currently  \n being processed. You will receve a notification \n with payment confirmation."/>
-</LinearLayout>
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_enjoyourservice"
+            android:layout_gravity="center"
+            android:src="@drawable/checked" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_success"
+            android:layout_marginTop="@dimen/_20ssp"
+            android:fontFamily="@font/sansregular"
+            android:gravity="center"
+            android:text="Your payment is currently  \n being processed. You will receve a notification \n with payment confirmation."
+            android:textSize="@dimen/_10ssp" />
+    </LinearLayout>
 
 
     <Button
-        android:background="@drawable/background_solidcolor_bordr"
- android:backgroundTint="@color/mor"
         android:id="@+id/b_confirm"
-        android:layout_margin="@dimen/_20ssp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="Confirm"/>
+        android:layout_margin="@dimen/_20ssp"
+        android:background="@drawable/background_solidcolor_bordr"
+        android:backgroundTint="@color/mor"
+        android:text="Confirm"
+        android:textColor="@color/white" />
 
     <TextView
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_above="@id/b_confirm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="View my booking"/>
+        android:layout_above="@id/b_confirm"
+        android:fontFamily="@font/sansbold"
+        android:gravity="center"
+        android:text="View my booking"
+        android:textStyle="bold" />
 </RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ApplyCoupon"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/ivarrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/arrow_back" />
+
+    <TextView
+        android:id="@+id/tv_offers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5ssp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/ivarrow"
+        android:fontFamily="@font/sansmedium"
+        android:text="Offers"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+
+        android:id="@+id/rl_enter_coupen"
+        android:background="@drawable/background_transparent_border"
+        android:layout_below="@id/tv_offers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+>
+        <EditText
+            android:id="@+id/et_enter_coupen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:background="@color/transparent"
+            android:layout_marginTop="@dimen/_5ssp"
+            android:hint="Enter Coupen Code"
+            android:inputType="text"
+            android:padding="8dp" />
+        <TextView
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:text="Apply"
+            android:textColor="@color/gray"
+            />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/rl_enter_coupen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+       />
+
+</RelativeLayout>

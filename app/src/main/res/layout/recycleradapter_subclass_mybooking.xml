@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:fontFamily="@font/poppinsregular"
+                android:id="@+id/tv_toyoto_glanza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOYOTO Glanza"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+
+
+                android:id="@+id/iv_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@id/tv_toyoto_glanza"
+                android:src="@drawable/success" />
+
+            <ImageView
+                android:id="@+id/iv_car"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/car" />
+
+            <TextView
+                android:fontFamily="@font/poppinsregular"
+
+                android:id="@+id/tv_bookingid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_toyoto_glanza"
+
+                android:text="Booking ID #123445678980"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_8ssp" />
+
+            <TextView
+                android:fontFamily="@font/poppinsregular"
+                android:id="@+id/tv_bookingdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_bookingid"
+
+                android:text="Booking Date 10/19/2023"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_8ssp" />
+
+
+
+
+
+
+            <ImageView
+                android:id="@+id/ivlocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_bookingdate"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/location" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:fontFamily="@font/poppinsregular"
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_bookingdate"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/ivlocation"
+                android:text="Vijay Nagar, Indore, Madhya Pradesh 452011"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold" />
+
+
+            <TextView
+
+                android:fontFamily="@font/sansmedium"
+                android:textSize="@dimen/_8ssp"
+                android:id="@+id/tv_carnumber"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_below="@id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Car Number \n Mp09po09"/>
+
+            <TextView
+                android:fontFamily="@font/sansmedium"
+                android:textSize="@dimen/_8ssp"
+                android:id="@+id/tv_paideby"
+                android:layout_toLeftOf="@id/tv_trackdriver"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_below="@id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid by Credit Card \n ₹ 1580.00"/>
+
+
+            <TextView
+                android:id="@+id/tv_trackdriver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_address"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/background_solidcolor_bordr"
+                android:backgroundTint="@color/mor"
+                android:paddingHorizontal="@dimen/_7ssp"
+                android:paddingVertical="5sp"
+                android:text="Track Driver"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
