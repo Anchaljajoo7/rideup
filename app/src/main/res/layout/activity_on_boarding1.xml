@@ -4,83 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OnBoarding1">
+    tools:context=".OnBoarding1"
+    android:layout_marginBottom="@dimen/_20sdp"
+    android:layout_marginHorizontal="@dimen/_10sdp">
     <include layout="@layout/ride_up_circle_logo"
         android:id="@+id/ilogo"/>
-
-    <ImageView
-        android:id="@+id/iv_rideup1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/rideup1"
+    <androidx.viewpager.widget.ViewPager
         android:layout_below="@id/ilogo"
-        android:layout_centerHorizontal="true"
-       />
-    <TextView
-        android:id="@+id/tv_welcome_trident"
-        android:layout_width="wrap_content"
+        android:id="@+id/pager_introduction"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:text="Welcome to trident"
-        android:textSize="25sp"
-        android:layout_marginLeft="10sp"
-        android:layout_below="@id/iv_rideup1"
-        android:layout_marginTop="30sp"/>
-    <TextView
-        android:id="@+id/tv_taxi_ride"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:text="taxi ride share service"
-        android:textSize="25sp"
-        android:layout_marginLeft="10sp"
-        android:layout_below="@id/tv_welcome_trident"
-        />
+        android:fitsSystemWindows="true"
+        tools:listitem="@layout/pager_item_circleindicator"
+        android:layout_above="@id/viewPagerCountDots"/>
 
-    <TextView
-        android:layout_marginTop="10dp"
-        android:id="@+id/tv_by_comparing"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/viewPagerCountDots"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="By comparing all the major ride  options in"
-        android:textSize="15sp"
-        android:layout_marginLeft="10sp"
-        android:layout_below="@id/tv_taxi_ride"
-        />
+        android:layout_above="@id/b_skip"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="horizontal" />
 
-    <TextView
-        android:id="@+id/tv_one_free_app"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="one free app"
-        android:layout_marginLeft="10sp"
-        android:textSize="15sp"
-        android:layout_below="@id/tv_by_comparing"
-        />
 
-    <Button
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/b_skip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Skip"
         android:layout_alignParentBottom="true"
         android:background="@drawable/background_transparent_border"
-        android:textColor="@color/black"
+        android:textColor="@color/gray"
         android:layout_marginLeft="20dp"
         />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/b_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Next"
         android:layout_alignParentEnd="true"
         android:layout_marginRight="20dp"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/background_transparent_border"
-        android:textColor="@color/black"
-        android:layout_marginLeft="20dp"
+    android:background="@drawable/background_solidcolor_bordr"
+        android:textColor="@color/white"
         android:backgroundTint="@color/mor"
-        android:padding="20dp"
-
         />
 
 

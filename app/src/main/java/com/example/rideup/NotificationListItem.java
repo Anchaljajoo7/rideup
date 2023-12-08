@@ -4,10 +4,12 @@ public class NotificationListItem {
 
     String type;
     String content;
+    String day;
 
-    public NotificationListItem(String type, String content) {
+    public NotificationListItem(String type, String content, String day) {
         this.type = type;
         this.content = content;
+        this.day = day;
     }
 
     public String getType() {
@@ -24,5 +26,13 @@ public class NotificationListItem {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public String getDay() {
+        return day;
+    }
+
+    public void setDay(String day) {
+        this.day = day;
     }
 }

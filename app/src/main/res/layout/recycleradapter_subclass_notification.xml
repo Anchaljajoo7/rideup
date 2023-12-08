@@ -4,10 +4,20 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <TextView
+        android:textStyle="bold"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/tv_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today"/>
+
     <androidx.cardview.widget.CardView
+        android:layout_below="@id/tv_day"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
         app:cardCornerRadius="@dimen/_10sdp">
         <RelativeLayout
             android:layout_margin="@dimen/_10sdp"
@@ -16,9 +26,10 @@
            
 
             <ImageView
+                android:layout_centerVertical="true"
                 android:id="@+id/iv_image"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_30sdp"
                 android:src="@drawable/paymentsuccessful"/>
 
             <LinearLayout
