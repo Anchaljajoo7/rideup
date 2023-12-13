@@ -8,6 +8,7 @@
     tools:context=".view.CompleteYourProfile">
 
     <ImageView
+
         android:id="@+id/ivarrow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,6 +16,7 @@
         android:src="@drawable/arrow_back" />
 
     <TextView
+        android:gravity="center_horizontal"
         android:id="@+id/tv_complete_your_profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

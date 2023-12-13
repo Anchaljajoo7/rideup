@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/drawer"
     tools:context=".view.Home">
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:id="@+id/navigation"
+        android:fitsSystemWindows="true">
+        <include
+            android:id="@+id/navigation_rideup"
+            layout="@layout/navigation_rideup"/>
+    </com.google.android.material.navigation.NavigationView>
 
     <fragment
         android:id="@+id/map"
@@ -80,6 +92,8 @@
                 android:src="@drawable/from" />
 
             <EditText
+                android:textSize="@dimen/_13sdp"
+                android:fontFamily="@font/poppinsregular"
                 android:id="@+id/et_from_location"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -91,7 +105,7 @@
 
             <View
                 android:layout_width="1dp"
-                android:layout_height="52dp"
+                android:layout_height="45dp"
                 android:layout_below="@id/iv_fromlocation"
                 android:layout_marginLeft="15dp"
                 android:background="@color/black" />
@@ -107,8 +121,8 @@
 
             <ImageView
                 android:id="@+id/iv_from_to"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
                 android:layout_below="@id/et_from_location"
                 android:layout_alignParentEnd="true"
                 android:layout_marginRight="20dp"
@@ -124,6 +138,8 @@
                 android:src="@drawable/to" />
 
             <EditText
+                android:textSize="@dimen/_13sdp"
+                android:fontFamily="@font/poppinsregular"
                 android:id="@+id/et_to_location"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -158,49 +174,60 @@
                     android:src="@drawable/cal" />
 
                 <TextView
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/poppinsregular"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="7dp"
-                    android:layout_marginBottom="10sp"
                     android:gravity="center_horizontal"
                     android:text="12 \n THU"
-                    android:textSize="@dimen/_10ssp" />
+                    android:textSize="@dimen/_8ssp" />
 
                 <TextView
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/_8ssp"
+                    android:fontFamily="@font/poppinsregular"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="7dp"
                     android:gravity="center_horizontal"
                     android:text="13 \n FRI"
-                    android:textSize="@dimen/_10ssp" />
+                   />
 
                 <TextView
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/_8ssp"
+                    android:fontFamily="@font/poppinsregular"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="7dp"
                     android:gravity="center_horizontal"
                     android:text="14 \n SAT"
-                    android:textSize="@dimen/_10ssp" />
+              />
 
                 <TextView
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/poppinsregular"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="7dp"
                     android:gravity="center_horizontal"
                     android:text="15 \n SUN"
-                    android:textSize="@dimen/_10ssp" />
+                    android:textSize="@dimen/_8ssp"  />
 
                 <TextView
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/poppinsregular"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="7dp"
                     android:gravity="center_horizontal"
                     android:text="16 \n MON"
-                    android:textSize="@dimen/_10ssp" />
+                    android:textSize="@dimen/_8ssp"  />
 
                 <View
                     android:layout_width="1dp"
-                    android:layout_height="40dp"
+                    android:layout_height="30dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="7dp"
                     android:background="@color/black" />
@@ -257,5 +284,6 @@
             android:text="Search"
             android:textColor="@color/white" />
 
+
     </RelativeLayout>
-</RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

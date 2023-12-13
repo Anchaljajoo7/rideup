@@ -19,6 +19,7 @@
         android:layout_above="@id/viewPagerCountDots"/>
 
     <LinearLayout
+        android:layout_marginBottom="@dimen/_20sdp"
         android:id="@+id/viewPagerCountDots"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

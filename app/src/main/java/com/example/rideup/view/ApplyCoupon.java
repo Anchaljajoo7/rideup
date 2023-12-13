@@ -23,27 +23,25 @@ RecyclerView recyclerView;
         recyclerView.setLayoutManager(linearLayoutManager);
         ArrayList<ApplyCoupenListItem>arrayList=new ArrayList<>();
         ApplyCoupenListItem item1=new ApplyCoupenListItem("AXIS200","Save ₹122 on this" +
-                " orders using Axis Bank\n" +
-                "Select Credit Cards! ","It is a long established fact that a reader will be\n" +
-                " distracted by the readable content of a page \n" +
-                "when looking at its layout. The point o");
+                " orders using Axis Bank" + "Select Credit Cards! ","It is a long established fact that a reader will be" +
+                " distracted by the readable content of a page " + "when looking at its layout. The point o");
 
         ApplyCoupenListItem item2=new ApplyCoupenListItem("AXIS200","Save ₹122 on this" +
-                " orders using Axis Bank\n" +
-                "Select Credit Cards! ","It is a long established fact that a reader will be\n" +
-                " distracted by the readable content of a page \n" +
+                " orders using Axis Bank" +
+                "Select Credit Cards! ","It is a long established fact that a reader will be" +
+                " distracted by the readable content of a page " +
                 "when looking at its layout. The point o");
 
         ApplyCoupenListItem item3=new ApplyCoupenListItem("AXIS200","Save ₹122 on this" +
-                " orders using Axis Bank\n" +
-                "Select Credit Cards! ","It is a long established fact that a reader will be\n" +
-                " distracted by the readable content of a page \n" +
+                " orders using Axis Bank" +
+                "Select Credit Cards! ","It is a long established fact that a reader will be" +
+                " distracted by the readable content of a page " +
                 "when looking at its layout. The point o");
 
         ApplyCoupenListItem item4=new ApplyCoupenListItem("AXIS200","Save ₹122 on this" +
-                " orders using Axis Bank\n" +
-                "Select Credit Cards! ","It is a long established fact that a reader will be\n" +
-                " distracted by the readable content of a page \n" +
+                " orders using Axis Bank" +
+                "Select Credit Cards! ","It is a long established fact that a reader will be" +
+                " distracted by the readable content of a page " +
                 "when looking at its layout. The point o");
 
         arrayList.add(item1);

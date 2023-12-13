@@ -1,82 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="@dimen/_5sdp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        app:cardCornerRadius="@dimen/_10sdp"
-       >
+    <ImageView
+        android:id="@+id/iv_left"
+        android:scaleType="fitXY"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_144sdp"
+        android:src="@drawable/imageleft"/>
 
-        <RelativeLayout
-            android:layout_margin="10dp"
+
+    <LinearLayout
+        android:background="@drawable/bg_trans_border_right"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+android:orientation="vertical"
+
+       android:padding="@dimen/_10sdp"
+    >
+
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/iv_axis"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/axismain"/>
+                <ImageView
+                    android:id="@+id/iv_axis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/axismain" />
 
-    <TextView
-        android:layout_marginLeft="@dimen/_5sdp"
-        android:fontFamily="@font/sansbold"
-        android:id="@+id/tv_axis200"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="AXIS200"
-        android:layout_toRightOf="@id/iv_axis"/>
+                <TextView
+                    android:id="@+id/tv_axis200"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:fontFamily="@font/sansbold"
+                    android:text="AXIS200" />
 
-    <TextView
-        android:fontFamily="@font/sansbold"
-        android:textColor="@color/mor"
-        android:id="@+id/tv_apply"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="APPLY"
-        android:layout_alignParentRight="true"/>
+                <TextView
+                    android:id="@+id/tv_apply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/sansbold"
+                    android:text="APPLY"
+                    android:textColor="@color/mor" />
+
+
+            </LinearLayout>
+
             <TextView
-                android:textSize="@dimen/_10ssp"
-                android:fontFamily="@font/sansbold"
-                android:textColor="@color/mor"
-                android:layout_marginTop="@dimen/_10sdp"
                 android:id="@+id/tv_save_rupee"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Save ₹122 on this orders using Axis Bank \n
-Select Credit Cards! "
-                android:layout_below="@id/tv_axis200"/>
-<ImageView
-    android:layout_marginTop="@dimen/_5sdp"
-    android:id="@+id/iv_dottedline"
-            android:layout_below="@id/tv_save_rupee"
-            android:layout_width="match_parent"
-            android:layout_height="5dp"
-            android:src="@drawable/dotted"
-            android:layerType="software"
-    app:tint="@color/gray" />
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/sansmedium"
+                android:text="Save ₹122 on this orders using Axis Bank Select Credit Cards! "
+                android:textColor="@color/mor"
+                android:textSize="@dimen/_9ssp" />
 
-            <TextView
-                android:layout_marginTop="@dimen/_5sdp"
-                android:textColor="@color/gray"
-                android:textSize="@dimen/_10ssp"
-                android:fontFamily="@font/sansbold"
-                android:id="@+id/tv_content"
-            android:layout_below="@id/iv_dottedline"
+            <View
+                android:id="@+id/iv_dottedline"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="It is a long established fact that a reader will be \n
- distracted by the readable content of a page \n
-when looking at its layout. The point o"/>
+                android:layout_height="5dp"
+                android:layout_marginTop="@dimen/_9sdp"
+                android:layerType="software"
+                android:background="@drawable/dotted"
+                app:tint="@color/gray" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/sansmedium"
+            android:maxLines="3"
+android:text="It is a long established fact that a reader distracted by the readable content of a page when looking at its layout. The point o"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_9ssp" />
+
+    </LinearLayout>
 
 
-        </RelativeLayout>
-
-    </androidx.cardview.widget.CardView>
-
-</RelativeLayout>
+</LinearLayout>

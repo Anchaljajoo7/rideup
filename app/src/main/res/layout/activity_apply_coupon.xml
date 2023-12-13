@@ -5,10 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.ApplyCoupon"
-    android:layout_marginHorizontal="@dimen/_20sdp"
+    android:background="@color/white"
+
     >
 
     <ImageView
+        android:layout_marginLeft="@dimen/_20sdp"
         android:id="@+id/ivarrow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,7 +19,8 @@
 
     <TextView
         android:id="@+id/tv_offers"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/_20sdp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/_5ssp"
         android:layout_marginTop="10dp"
@@ -27,6 +30,7 @@
         android:textSize="20sp"
         android:textStyle="bold" />
     <androidx.cardview.widget.CardView
+        android:layout_marginHorizontal="@dimen/_20sdp"
         android:layout_marginTop="@dimen/_10sdp"
         android:layout_below="@id/tv_offers"
         android:id="@+id/rl_enter_coupen"
@@ -65,6 +69,8 @@ android:text="Apply"
     </androidx.cardview.widget.CardView>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_20sdp"
         android:id="@+id/rvrecyclerview"
         android:layout_below="@id/rl_enter_coupen"
         android:layout_width="match_parent"

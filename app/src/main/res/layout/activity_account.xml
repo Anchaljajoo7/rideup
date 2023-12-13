@@ -20,10 +20,10 @@
         android:layout_marginLeft="@dimen/_5ssp"
         android:layout_marginTop="10dp"
         android:layout_toRightOf="@id/ivarrow"
-        android:fontFamily="@font/sansmedium"
-        android:text="Edit profile"
+        android:fontFamily="@font/dmsans_medium500"
+        android:text="My profile"
         android:textSize="20sp"
-        android:textStyle="bold" />
+     />
 
     <ImageView
         android:id="@+id/ivdp"

@@ -21,10 +21,16 @@
         android:theme="@style/Theme.Rideup"
         tools:targetApi="31">
         <activity
-            android:name=".view.LaunchScreen"
+            android:name=".view.MyBookingDetail"
             android:exported="false" />
         <activity
-            android:name=".view.ApplyCoupon"
+            android:name=".view.Account1"
+            android:exported="false" />
+        <activity
+            android:name=".view.OnBoarding1"
+            android:exported="false" />
+        <activity
+            android:name=".view.LaunchScreen"
             android:exported="false" />
         <activity
             android:name=".view.MyBooking"
@@ -42,7 +48,7 @@
             android:name=".view.CarBookingSeater"
             android:exported="false" />
         <activity
-            android:name=".view.Home"
+            android:name=".view.ApplyCoupon"
             android:exported="false" />
         <activity
             android:name=".view.Detail"
@@ -69,7 +75,7 @@
             android:name=".view.NumberVerification"
             android:exported="false" />
         <activity
-            android:name=".OnBoarding1"
+            android:name=".view.Home"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

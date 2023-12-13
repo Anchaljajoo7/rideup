@@ -25,7 +25,7 @@ initial();
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent=new Intent(LaunchScreen.this,NumberVerification.class);
+                Intent intent=new Intent(LaunchScreen.this,OnBoarding1.class);
                 startActivity(intent);
                 finish();
             }

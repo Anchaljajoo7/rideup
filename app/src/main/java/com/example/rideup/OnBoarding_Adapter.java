@@ -21,7 +21,7 @@ public class OnBoarding_Adapter extends PagerAdapter {
     Context context;
 ImageView imageView;
     TextView textView1,textView2;
-    RelativeLayout relativeLayout;
+
 
 
     public OnBoarding_Adapter(ArrayList<OnBoarding_Model> onBoardingModels, Context context) {

@@ -1,6 +1,8 @@
 package com.example.rideup.view;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 
 import android.content.Intent;
@@ -9,9 +11,12 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.example.rideup.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -23,10 +28,17 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.android.material.navigation.NavigationView;
 
 public class Home extends AppCompatActivity implements OnMapReadyCallback {
 Button button;
-LinearLayout linearLayout;
+
+DrawerLayout drawerLayout;
+    ImageView i1,iv2;
+    View vg;
+NavigationView navigationView;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,8 +49,15 @@ LinearLayout linearLayout;
     }
 
     private void initial() {
-
         button=findViewById(R.id.b_search);
+        i1 = findViewById(R.id.iv_navigation);
+        drawerLayout=findViewById(R.id.drawer);
+        iv2=findViewById(R.id.iv_notification);
+        vg=findViewById(R.id.navigation_rideup);
+        navigationView=findViewById(R.id.navigation);
+
+
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,6 +69,30 @@ LinearLayout linearLayout;
 
             }
         });
+
+        i1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                drawerLayout.openDrawer(GravityCompat.START);
+            }
+        });
+        navigationView.bringToFront();
+        View v=findViewById(R.id.iv_arrownext);
+        v.setOnClickListener(v1 -> {
+            Intent intent=new Intent(Home.this, Account1.class);
+            startActivity(intent);
+        });
+
+        iv2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Home.this,Notification.class);
+startActivity(intent);
+            finish();}
+        });
+
+
+
 //        linearLayout=findViewById(R.id.ll_date);
 //        linearLayout.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -60,6 +103,21 @@ LinearLayout linearLayout;
 //            }
 //        });
     }
+
+//    private void second() {
+////       navigation_rideup=findViewById(R.id.iv_arrownext);
+//       navigation_rideup.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+////                Intent intent=new Intent(Home.this, Account1.class);
+////                startActivity(intent);
+////                finish();
+//                Toast.makeText(Home.this, "1234567890", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//
+//
+//    }
 
 //    private void showbottomsheet() {
 //        BottomSheetDialog bottomSheetDialog=new BottomSheetDialog(this);
