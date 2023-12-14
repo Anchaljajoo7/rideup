@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".view.CarBookingSeater"
     android:layout_marginHorizontal="@dimen/_10sdp"
-    android:layout_marginBottom="@dimen/_20sdp">
+    android:layout_marginBottom="@dimen/_20sdp"
+    android:background="@color/white">
 
     <ImageView
 

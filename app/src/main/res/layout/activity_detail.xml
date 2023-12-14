@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.Detail">
+    tools:context=".view.Detail"
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/iv_car"
@@ -182,6 +183,7 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
+        android:textAllCaps="false"
         android:id="@+id/b_booknow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

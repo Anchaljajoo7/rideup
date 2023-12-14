@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawer"
-    tools:context=".view.Home">
+    tools:context=".view.Home"
+    android:background="@color/white">
 
     <com.google.android.material.navigation.NavigationView
         android:layout_width="match_parent"
@@ -276,6 +277,7 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/b_search"
+            android:textAllCaps="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"

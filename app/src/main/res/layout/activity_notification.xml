@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.Notification"
-    android:layout_marginHorizontal="@dimen/_20sdp">
+    android:layout_marginHorizontal="@dimen/_20sdp"
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/ivarrow"

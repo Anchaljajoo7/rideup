@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginHorizontal="10dp"
-    tools:context=".view.OTPCode">
+    tools:context=".view.OTPCode"
+    android:background="@color/white">
 
     <include
         android:id="@+id/ivrideuplogo"
@@ -111,6 +112,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:textColor="@color/white"
+        android:textAllCaps="false"
         android:background="@drawable/background_solidcolor_bordr"
         android:backgroundTint="@color/mor"
         android:id="@+id/b1_verify_otp"

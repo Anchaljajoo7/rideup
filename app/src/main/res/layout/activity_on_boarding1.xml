@@ -5,8 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".OnBoarding1"
-    android:layout_marginBottom="@dimen/_20sdp"
-    android:layout_marginHorizontal="@dimen/_10sdp">
+
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:background="@color/white">
     <include layout="@layout/ride_up_circle_logo"
         android:id="@+id/ilogo"/>
     <androidx.viewpager.widget.ViewPager
@@ -35,6 +36,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Skip"
+        android:textAllCaps="false"
+        android:layout_marginBottom="@dimen/_20sdp"
         android:layout_alignParentBottom="true"
         android:background="@drawable/background_transparent_border"
         android:textColor="@color/gray"
@@ -43,9 +46,11 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/b_next"
+        android:layout_marginBottom="@dimen/_20sdp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Next"
+        android:textAllCaps="false"
         android:layout_alignParentEnd="true"
         android:layout_marginRight="20dp"
         android:layout_alignParentBottom="true"

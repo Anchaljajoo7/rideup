@@ -1,9 +1,345 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.MyBookingDetail">
+    android:layout_marginHorizontal="@dimen/_15sdp"
+    tools:context=".view.MyBookingDetail"
+    android:background="@color/white">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/ivarrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/arrow_back" />
+
+    <TextView
+        android:id="@+id/tv_edit_your_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5ssp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/ivarrow"
+        android:fontFamily="@font/dmsans_medium500"
+        android:text="My Booking"
+        android:textSize="20sp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_details"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingHorizontal="@dimen/_20sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:background="@drawable/carddesign"
+        android:layout_below="@id/tv_edit_your_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+        <TextView
+            android:textSize="@dimen/_14ssp"
+            android:id="@+id/tv_toyoto_glanza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toyota Glanza"
+            android:fontFamily="@font/poppinsregular"/>
+        <TextView
+            android:fontFamily="@font/dmsans_medium500"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmed "
+            android:layout_alignParentRight="true"/>
+<TextView
+    android:id="@+id/tv_vehiclenumber"
+    android:textSize="@dimen/_9sdp"
+    android:layout_below="@id/tv_toyoto_glanza"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Vehicle Number"/>
+
+        <TextView
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_below="@id/tv_toyoto_glanza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_vehiclenumber"
+            android:text="Mp09po09"
+            android:textSize="@dimen/_9sdp"
+            android:fontFamily="@font/poppinsregular"/>
+
+<TextView
+    android:textSize="@dimen/_9sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:id="@+id/tv_fromlocation"
+    android:layout_below="@id/tv_vehiclenumber"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+android:fontFamily="@font/dmsans_medium500"
+    android:text="Indore"/>
+
+        <TextView
+
+            android:textSize="@dimen/_7sdp"
+            android:fontFamily="@font/dmsans_medium500"
+            android:id="@+id/tv_to_date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oct 10, 5:50AM"
+            android:layout_below="@id/tv_fromlocation"
+            />
+
+        <TextView
+            android:textSize="@dimen/_9sdp"
+            android:fontFamily="@font/dmsans_medium500"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/tv_droplocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Bhopal"
+            android:layout_below="@id/tv_vehiclenumber"/>
+
+        <ImageView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_vehiclenumber"
+            android:layout_centerInParent="true"
+            android:src="@drawable/tofrom" />
+
+        <TextView
+            android:textSize="@dimen/_7sdp"
+            android:fontFamily="@font/dmsans_medium500"
+            android:layout_below="@id/tv_droplocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oct 10, 11:15PM"
+            android:layout_alignParentRight="true"
+            />
+        <View
+            android:layout_toLeftOf="@id/tv_bookingid"
+android:layout_below="@id/tv_to_date_time"
+           android:layout_marginTop="@dimen/_20sdp"
+            android:id="@+id/iv_dottedline"
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:layerType="software"
+            android:background="@drawable/dotted"
+            app:tint="@color/gray" />
+
+        <View
+            android:layout_toRightOf="@id/tv_bookingid"
+            android:layout_below="@id/tv_to_date_time"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:id="@+id/iv_dottedline2"
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:layerType="software"
+            android:background="@drawable/dotted"
+            app:tint="@color/gray" />
+
+        <TextView
+            android:id="@+id/tv_bookingid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_to_date_time"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background_dashed_border"
+            android:fontFamily="@font/dmsans_medium500"
+            android:padding="@dimen/_5sdp"
+            android:text="Booking ID #12344567"
+            android:textSize="@dimen/_9sdp" />
+
+        <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/tv_passengername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passenger name"
+            android:textColor="@color/gray"
+            android:layout_below="@id/tv_bookingid"
+            android:fontFamily="@font/dmsans_medium500"
+            android:textSize="@dimen/_9ssp"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/tv_seatno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seat no."
+            android:textColor="@color/gray"
+            android:layout_below="@id/tv_bookingid"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/dmsans_medium500"
+            android:textSize="@dimen/_9ssp"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/tv_ticketfare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ticket fare"
+            android:textColor="@color/gray"
+            android:layout_below="@id/tv_bookingid"
+       android:layout_alignParentRight="true"
+            android:fontFamily="@font/dmsans_medium500"
+            android:textSize="@dimen/_9ssp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10ssp"
+            android:text="Satoshi, Winlander"
+            android:fontFamily="@font/dmsans_medium500"
+            android:layout_below="@id/tv_passengername"/>
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10ssp"
+            android:text="S11,W10"
+            android:fontFamily="@font/dmsans_medium500"
+            android:layout_below="@id/tv_seatno"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10ssp"
+            android:text="₹900"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/dmsans_medium500"
+            android:layout_below="@id/tv_ticketfare"/>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_details"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp"
+        android:layout_below="@id/tl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dmsans_medium500"
+            android:text="Help" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/background_transparent_border"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/chat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="Chat with us" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_weight="1"
+                android:background="@drawable/background_solidcolor_bordr"
+                android:backgroundTint="@color/red"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/cancel" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Cancel Ticket"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

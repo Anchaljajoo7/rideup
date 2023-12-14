@@ -32,6 +32,9 @@
         android:textStyle="bold" />
 
     <EditText
+        android:textSize="@dimen/_10sdp"
+        android:fontFamily="@font/poppinsregular"
+      android:paddingHorizontal="@dimen/_10sdp"
         android:id="@+id/et_cardnumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,7 +42,7 @@
         android:layout_marginTop="10sp"
         android:background="@drawable/background_transparent_border"
         android:hint="Enter 12 digit card number"
-        android:paddingVertical="5dp" />
+        android:paddingVertical="10dp" />
 
     <LinearLayout
         android:id="@+id/ll_valid_thru"
@@ -55,7 +58,7 @@
             android:orientation="vertical">
 
             <TextView
-
+android:fontFamily="@font/sansbold"
                 android:id="@+id/tv_validthru"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -74,14 +77,17 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/background_transparent_border"
                     android:orientation="horizontal"
-                    android:padding="20dp">
+                    android:padding="@dimen/_10sdp">
 
                     <TextView
+                        android:textSize="@dimen/_10sdp"
+                        android:fontFamily="@font/poppinsregular"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Month" />
 
                     <ImageView
+                        android:layout_marginLeft="@dimen/_5sdp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/arrowdown" />
@@ -94,14 +100,17 @@
                     android:layout_marginLeft="10dp"
                     android:background="@drawable/background_transparent_border"
                     android:orientation="horizontal"
-                    android:padding="20dp">
+                    android:padding="@dimen/_10sdp">
 
                     <TextView
+                        android:textSize="@dimen/_10sdp"
+android:fontFamily="@font/poppinsregular"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Year" />
 
                     <ImageView
+                        android:layout_marginLeft="@dimen/_5sdp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/arrowdown" />
@@ -123,7 +132,7 @@
             android:orientation="vertical">
 
             <TextView
-
+android:fontFamily="@font/sansbold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10sp"
@@ -136,14 +145,17 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/background_transparent_border"
                 android:orientation="horizontal"
-                android:padding="20dp">
+                android:padding="@dimen/_10sdp">
 
                 <TextView
+                    android:textSize="@dimen/_10sdp"
+                    android:fontFamily="@font/poppinsregular"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Year" />
+                    android:text="CVV" />
 
                 <ImageView
+                    android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/arrowdown" />
@@ -158,6 +170,7 @@
     </LinearLayout>
 
     <TextView
+        android:fontFamily="@font/sansbold"
         android:id="@+id/tv_CardHoldersName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -167,6 +180,7 @@
         android:textStyle="bold" />
 
     <EditText
+        android:textSize="@dimen/_10sdp"
         android:id="@+id/et_NameonCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -174,9 +188,11 @@
         android:layout_marginTop="10sp"
         android:background="@drawable/background_transparent_border"
         android:hint="Name on Card"
-        android:paddingVertical="5dp" />
+        android:paddingVertical="@dimen/_10sdp"
+        android:paddingHorizontal="@dimen/_10sdp"/>
 
     <TextView
+        android:fontFamily="@font/sansbold"
         android:padding="@dimen/_15ssp"
         android:id="@+id/b_savecard"
         android:layout_width="match_parent"
@@ -188,6 +204,7 @@
        android:layout_below="@id/et_NameonCard"
         android:layout_marginTop="@dimen/_30ssp"
         android:layout_marginBottom="@dimen/_20ssp"
+        android:gravity="center"
         />
 
 

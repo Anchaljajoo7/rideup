@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.Account1">
+    tools:context=".view.Account1"
+    android:background="@color/white">
 <RelativeLayout
 android:id="@+id/rl_myprofile"
     android:backgroundTint="@color/mor"
@@ -12,7 +13,7 @@ android:id="@+id/rl_myprofile"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
     <ImageView
-        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
         android:id="@+id/ivarrow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,7 +36,7 @@ android:id="@+id/rl_myprofile"
 
     <LinearLayout
         android:layout_marginBottom="@dimen/_10sdp"
-        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_10sdp"
         android:layout_below="@id/tv_myprofile"
         android:layout_width="match_parent"
@@ -93,6 +94,7 @@ android:layout_gravity="center_vertical"
 </RelativeLayout>
 
     <LinearLayout
+        android:layout_marginLeft="@dimen/_10sdp"
         android:layout_below="@id/rl_myprofile"
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -119,6 +121,20 @@ android:layout_gravity="center_vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="My Order"/>
+        <RelativeLayout
+            android:gravity="end"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_arrownext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrowright"
+
+                />
+        </RelativeLayout>
     </LinearLayout>
     <LinearLayout
         android:padding="@dimen/_10sdp"
@@ -137,6 +153,20 @@ android:layout_gravity="center_vertical"
             android:fontFamily="@font/dmsans_medium500"                    android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="My Voucher"/>
+        <RelativeLayout
+            android:gravity="end"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_arrownext1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrowright"
+
+                />
+        </RelativeLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -155,6 +185,20 @@ android:layout_gravity="center_vertical"
             android:fontFamily="@font/dmsans_medium500"                    android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Payment Methods"/>
+        <RelativeLayout
+            android:gravity="end"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_arrownext2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrowright"
+
+                />
+        </RelativeLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -173,6 +217,20 @@ android:layout_gravity="center_vertical"
             android:fontFamily="@font/dmsans_medium500"                    android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Invite Friends"/>
+        <RelativeLayout
+            android:gravity="end"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_arrownext3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrowright"
+
+                />
+        </RelativeLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -191,6 +249,20 @@ android:layout_gravity="center_vertical"
             android:fontFamily="@font/dmsans_medium500"                    android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="My Order"/>
+        <RelativeLayout
+            android:gravity="end"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_arrownext4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrowright"
+
+                />
+        </RelativeLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -210,6 +282,20 @@ android:layout_gravity="center_vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Settings"/>
+        <RelativeLayout
+            android:gravity="end"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_arrownext5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrowright"
+
+                />
+        </RelativeLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -231,6 +317,20 @@ android:layout_gravity="center_vertical"
             android:layout_height="wrap_content"
             android:text="Log out"
          />
+        <RelativeLayout
+            android:gravity="end"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_arrownext6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrowright"
+
+                />
+        </RelativeLayout>
     </LinearLayout>
 
 </LinearLayout>

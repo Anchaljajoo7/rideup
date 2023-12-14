@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginBottom="@dimen/_20sdp"
-    tools:context=".view.PaymentSuccesful">
+    tools:context=".view.PaymentSuccesful"
+    android:background="@color/white">
 
     <TextView
         android:id="@+id/tv_enjoyourservice"
@@ -45,7 +46,7 @@
     </LinearLayout>
 
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/b_confirm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -54,6 +55,7 @@
         android:background="@drawable/background_solidcolor_bordr"
         android:backgroundTint="@color/mor"
         android:text="Confirm"
+        android:textAllCaps="false"
         android:textColor="@color/white" />
 
     <TextView

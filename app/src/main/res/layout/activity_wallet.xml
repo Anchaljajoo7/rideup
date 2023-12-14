@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".view.Wallet"
     android:layout_marginHorizontal="@dimen/_20sdp"
-    android:layout_marginTop="10dp">
+    android:layout_marginTop="10dp"
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/ivarrow"

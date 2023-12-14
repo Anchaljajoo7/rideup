@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginHorizontal="@dimen/_20sdp"
-    tools:context=".view.PaymentOptions">
+    tools:context=".view.PaymentOptions"
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/iv_arrow_back"
@@ -652,6 +653,7 @@
     </ScrollView>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:textAllCaps="false"
         android:id="@+id/b_proceedtopay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

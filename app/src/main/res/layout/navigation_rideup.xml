@@ -43,18 +43,11 @@
                    android:text="+9109876543"/>
 
 
-           </LinearLayout>
-           <ImageView
-              android:layout_marginTop="@dimen/_4sdp"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:src="@drawable/success"
-               android:layout_marginLeft="@dimen/_5sdp"/>
-           <RelativeLayout
-               android:gravity="end"
-               android:layout_gravity="center_vertical"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content">
+           </LinearLayout> <RelativeLayout
+           android:gravity="end"
+           android:layout_gravity="center_vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
            <ImageView
                android:id="@+id/iv_arrownext"
                android:layout_width="wrap_content"
@@ -62,7 +55,14 @@
                android:src="@drawable/arrowright"
 
                />
-           </RelativeLayout>
+       </RelativeLayout>
+           <ImageView
+              android:layout_marginTop="@dimen/_4sdp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/success"
+               android:layout_marginLeft="@dimen/_5sdp"/>
+
 
        </LinearLayout>
 

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginHorizontal="10dp"
-    tools:context=".view.CompleteYourProfile">
+    tools:context=".view.CompleteYourProfile"
+    android:background="@color/white">
 
     <ImageView
 
@@ -16,6 +17,7 @@
         android:src="@drawable/arrow_back" />
 
     <TextView
+
         android:gravity="center_horizontal"
         android:id="@+id/tv_complete_your_profile"
         android:layout_width="wrap_content"
@@ -183,6 +185,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:textAllCaps="false"
         android:id="@+id/b_continue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

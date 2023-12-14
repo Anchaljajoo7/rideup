@@ -243,6 +243,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/b_reset"
+        android:textAllCaps="false"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/ll_select_pricerange"
@@ -253,6 +254,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/b_apply"
+        android:textAllCaps="false"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/ll_select_pricerange"
@@ -262,7 +264,7 @@
         android:background="@drawable/background_solidcolor_bordr"
         android:backgroundTint="@color/mor"
         android:padding="5dp"
-        android:text="Apply"
+        android:text="APPLY"
         android:textColor="@color/white" />
 
 </RelativeLayout>

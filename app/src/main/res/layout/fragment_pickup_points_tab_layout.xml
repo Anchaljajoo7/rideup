@@ -65,6 +65,7 @@
             android:textSize="@dimen/_10ssp" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:textAllCaps="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"

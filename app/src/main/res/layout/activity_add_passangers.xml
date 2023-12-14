@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginHorizontal="@dimen/_20sdp"
-    tools:context=".view.AddPassangers">
+    tools:context=".view.AddPassangers"
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/iv_arrow_back"
@@ -170,6 +171,7 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/b_add"
+            android:textAllCaps="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/tv_future_booking"
