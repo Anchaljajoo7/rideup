@@ -1,14 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".view.Pickup">
+    android:layout_height="wrap_content"
+    tools:context=".view.Pickup"
+  >
 
     <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/iv_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loc"/>
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:textSize="@dimen/_10sdp"
+        android:fontFamily="@font/dmsans_medium500"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_toRightOf="@id/iv_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vijay Nagar, Indore, Madhya Pradesh 452011"/>
 
-</FrameLayout>
+    <ImageView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/iv_time"
+        android:layout_below="@id/iv_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/clock"/>
+    <TextView
+        android:textSize="@dimen/_10sdp"
+        android:fontFamily="@font/dmsans_medium500"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_toRightOf="@id/iv_time"
+        android:layout_below="@id/iv_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mon, 21 Oct, 05:00 PM"/>
+
+
+</RelativeLayout>

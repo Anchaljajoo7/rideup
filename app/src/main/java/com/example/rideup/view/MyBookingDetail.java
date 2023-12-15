@@ -7,9 +7,17 @@ import android.os.Bundle;
 
 import com.example.rideup.R;
 import com.example.rideup.TabRideupAdapter2;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.material.tabs.TabLayout;
 
-public class MyBookingDetail extends AppCompatActivity {
+public class MyBookingDetail extends AppCompatActivity implements OnMapReadyCallback {
 ViewPager viewPager;
 TabLayout tabLayout;
     @Override
@@ -17,6 +25,8 @@ TabLayout tabLayout;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_booking_detail);
  initial();
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.f_map);
+        mapFragment.getMapAsync(this);
     }
 
     private void initial() {
@@ -30,4 +40,17 @@ TabLayout tabLayout;
         viewPager.setAdapter(tabRideupAdapter2);
 
     }
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        LatLng myPos = new LatLng(22, 76);
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(myPos));
+
+        BitmapDescriptor icon = BitmapDescriptorFactory.fromResource(R.drawable.auto);
+
+//        googleMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
+        googleMap.addMarker(new MarkerOptions().position(myPos).title("indore").icon(icon));
+
+    }
+
+
 }

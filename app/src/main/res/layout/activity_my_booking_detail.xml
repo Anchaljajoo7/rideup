@@ -26,6 +26,13 @@
         android:text="My Booking"
         android:textSize="20sp"
         />
+    <ScrollView
+        android:layout_below="@id/tv_edit_your_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
     <RelativeLayout
         android:id="@+id/rl_details"
@@ -33,7 +40,7 @@
         android:paddingHorizontal="@dimen/_20sdp"
         android:paddingVertical="@dimen/_10sdp"
         android:background="@drawable/carddesign"
-        android:layout_below="@id/tv_edit_your_profile"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
        >
@@ -224,37 +231,83 @@ android:layout_below="@id/tv_to_date_time"
     </RelativeLayout>
 
 
+<androidx.cardview.widget.CardView
+    android:background="@drawable/background_transparent_border"
+    android:id="@+id/cv_location"
+    android:layout_marginTop="@dimen/_10sdp"
 
-
-
-
-
-
+    android:layout_below="@id/rl_details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/rl_details"/>
+        />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/vp"
         android:layout_below="@id/tl"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/_80sdp"
         />
 
 
 
+</RelativeLayout>
 
 
 
 
+</androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/tv_tracking"
+        android:textSize="@dimen/_14sdp"
+        android:fontFamily="@font/sansbold"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Track your vehicle"
+        android:layout_below="@id/cv_location"/>
+
+
+            <TextView
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/_10sdp"
+        android:fontFamily="@font/sansmedium"
+        android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle is delayed by 30mins"
+        android:layout_below="@id/cv_location"
+                android:textColor="@color/red"
+        />
+
+    <fragment
+
+        android:id="@+id/f_map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_160sdp"
+android:layout_below="@id/tv_tracking"/>
+
+            <TextView
+                android:fontFamily="@font/dmsans_medium500"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Driver Detail"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_14sdp"
+                android:layout_below="@id/f_map"/>
 
 
 
+        </RelativeLayout>
 
-
-
+    </ScrollView>
 
 
 
@@ -270,6 +323,7 @@ android:layout_below="@id/tv_to_date_time"
 
 
     <LinearLayout
+        android:id="@+id/ll_bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
